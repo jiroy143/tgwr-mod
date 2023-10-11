@@ -5729,6 +5729,7 @@ country_event = {
 				id = ww1_china.98
 				days = 10
 			}
+			unlock_national_focus = CHI_beiyang_meditator
 			set_popularities = {
 				democratic = 40
 				neutrality = 50
@@ -11072,24 +11073,25 @@ country_event = {
 	title = ww1_china.108.t
 	desc = ww1_china.108.d
 	picture = GFX_report_event_china_politicians_captured
-	fire_only_once = yes
-	trigger = {
-		tag = CHI
-		has_country_leader = {
-			character = CHI_li_yuanhong
-			ruling_only = yes
-		}
-		has_idea = CHI_idea_duan_qirui
-		is_subject = no
-		has_war = no
-	}
+	# fire_only_once = yes
+	# trigger = {
+	# 	tag = CHI
+	# 	has_country_leader = {
+	# 		character = CHI_li_yuanhong
+	# 		ruling_only = yes
+	# 	}
+	# 	has_idea = CHI_idea_duan_qirui
+	# 	is_subject = no
+	# 	has_war = no
+	# }
+	is_triggered_only = yes
 	mean_time_to_happen = { days = 30 }
 	option = {
 		name = ww1_china.108.a
-		country_event = {
-			id = ww1_china.109
-			days = 30
-		}
+		# country_event = {
+		# 	id = ww1_china.109
+		# 	days = 30
+		# }
 	}
 }
 
@@ -11111,10 +11113,10 @@ country_event = {
 			ideology = fascism
 			popularity = -0.05
 		}
-		country_event = {
-			id = ww1_china.110
-			days = 30
-		}
+		# country_event = {
+		# 	id = ww1_china.110
+		# 	days = 30
+		# }
 	}
 	option = {
 		name = ww1_china.109.a
@@ -11126,10 +11128,10 @@ country_event = {
 			ideology = fascism
 			popularity = 0.02
 		}
-		country_event = {
-			id = ww1_china.110
-			days = 30
-		}
+		# country_event = {
+		# 	id = ww1_china.110
+		# 	days = 30
+		# }
 		ai_chance = {
 			factor = 0
 		}
@@ -11153,10 +11155,10 @@ country_event = {
 			ideology = fascism
 			popularity = 0.02
 		}
-		country_event = {
-			id = ww1_china.111
-			days = 30
-		}
+		# country_event = {
+		# 	id = ww1_china.111
+		# 	days = 30
+		# }
 	}
 	option = {
 		name = ww1_china.110.a
@@ -11169,10 +11171,10 @@ country_event = {
 			ideology = fascism
 			popularity = -0.05
 		}
-		country_event = {
-			id = ww1_china.111
-			days = 30
-		}
+		# country_event = {
+		# 	id = ww1_china.111
+		# 	days = 30
+		# }
 		ai_chance = {
 			factor = 0
 		}
@@ -11190,46 +11192,46 @@ country_event = {
 		name = ww1_china.111.a
 		custom_effect_tooltip = historical_tt
 		add_political_power = -100
-		if = {
-			limit = {
-				has_global_flag = kis_war
-				NOT = {
-					has_global_flag = great_war_ends
-					is_in_faction_with = GER
-					is_in_faction_with = FRA
-					has_war_with = GER
-					has_war_with = FRA
-					has_country_flag = CHI_join_great_war
-				}
-			}
-			country_event = {
-				id = ww1_china.143
-				days = 30
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		has_global_flag = kis_war
+		# 		NOT = {
+		# 			has_global_flag = great_war_ends
+		# 			is_in_faction_with = GER
+		# 			is_in_faction_with = FRA
+		# 			has_war_with = GER
+		# 			has_war_with = FRA
+		# 			has_country_flag = CHI_join_great_war
+		# 		}
+		# 	}
+		# 	country_event = {
+		# 		id = ww1_china.143
+		# 		days = 30
+		# 	}
+		# }
 	}
 	option = {
 		name = ww1_china.111.b
 		custom_effect_tooltip = ww1_china.111.b.tt
 		add_stability = -0.10
 		set_country_flag = li_yuanhong_in_charge
-		if = {
-			limit = {
-				has_global_flag = kis_war
-				NOT = {
-					has_global_flag = great_war_ends
-					is_in_faction_with = GER
-					is_in_faction_with = FRA
-					has_war_with = GER
-					has_war_with = FRA
-					has_country_flag = CHI_join_great_war
-				}
-			}
-			country_event = {
-				id = ww1_china.143
-				days = 30
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		has_global_flag = kis_war
+		# 		NOT = {
+		# 			has_global_flag = great_war_ends
+		# 			is_in_faction_with = GER
+		# 			is_in_faction_with = FRA
+		# 			has_war_with = GER
+		# 			has_war_with = FRA
+		# 			has_country_flag = CHI_join_great_war
+		# 		}
+		# 	}
+		# 	country_event = {
+		# 		id = ww1_china.143
+		# 		days = 30
+		# 	}
+		# }
 		ai_chance = {
 			factor = 0
 		}
@@ -11976,6 +11978,7 @@ country_event = {
 			can_join_factions = no
 		}
 		hidden_effect = {
+			unlock_national_focus = CHI_beiyang_meditator
 			set_global_flag = chinese_warlord_crisis
 			set_global_flag = warlord_era
 			country_event = ww1_china.2
@@ -13500,6 +13503,7 @@ country_event = {
 			}
 			add_ideas = CHI_idea_duan_qirui
 			add_ideas = CHI_idea_feng_guozhang_vice_president
+			unlock_national_focus = CHI_beiyang_meditator
 		}
 		country_event = {
 			id = ww1_china.98
@@ -16236,6 +16240,93 @@ country_event = {
 					is_in_faction_with = FROM
 				}
 			}
+		}
+	}
+}
+
+# Southern Compromise - Li Yuanhong wants peace
+country_event = {
+	id = ww1_china.188
+	title = ww1_china.188.t
+	desc = ww1_china.188.d
+	picture = GFX_report_event_chinese_soldiers_running
+	is_triggered_only = yes
+	option = {
+		name = ww1_china.188.a
+		every_other_country = {
+			limit = {
+				original_tag = YUN
+				original_tag = GXC
+				original_tag = GDC
+				NOT = {
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			country_event = {
+				id = ww1_china.189
+				hours = 3
+			}
+		}
+	}
+}
+
+# Southern Compromise - Answer
+country_event = {
+	id = ww1_china.189
+	title = ww1_china.189.t
+	desc = ww1_china.189.d
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	option = {
+		name = ww1_china.189.a
+		add_political_power = 50
+		country_event = {
+			id = ww1_china.190
+			hours = 3
+		}
+	}
+	option = {
+		name = ww1_china.189.b
+		effect_tooltip = {
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = HOI4TGW_Opinion_diplomats_malus
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Southern Compromise - Answer Recieved
+country_event = {
+	id = ww1_china.190
+	title = ww1_china.190.t
+	desc = ww1_china.190.d
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	option = {
+		name = ww1_china.190.a
+		add_political_power = 50
+	}
+}
+
+# Southern Compromise - Rejection Recieved
+country_event = {
+	id = ww1_china.191
+	title = ww1_china.191.t
+	desc = ww1_china.191.d
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	option = {
+		name = ww1_china.191.a
+		add_opinion_modifier = {
+			target = FROM
+			modifier = HOI4TGW_Opinion_diplomats_malus
 		}
 	}
 }

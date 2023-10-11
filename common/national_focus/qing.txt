@@ -2534,7 +2534,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QIN_the_armies_of_warlords
-		icon = GFX_focus_chi_united_front
+		icon = GFX_focus_five_race_star_flag
 		cost = 5
 		prerequisite = {
 			focus = QIN_invite_military_advisers
