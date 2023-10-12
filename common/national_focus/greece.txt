@@ -2859,7 +2859,16 @@ focus = {
 		}
 	}
 	available = {
-		has_country_flag = BW1_winner
+		OR = {
+			has_country_flag = BW1_winner
+			any_owned_state = {
+				is_core_of = TUR
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		
 		NOT = {
 			has_war_with = TUR
 		}
@@ -2886,7 +2895,7 @@ focus = {
 				}
 				add_compliance = 25
 				add_resistance = -10
-				add_dynamic_modifier = { modifier = GRE_integration_efforts scope = ROOT }
+				add_dynamic_modifier = { modifier = GRE_integration_efforts }
 			}
 		}
     }
@@ -6849,6 +6858,7 @@ focus = {
 			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
+			has_global_flag = russian_civil_war
 			RUS = {
 				has_war_with = SOV
 			}
@@ -6858,6 +6868,26 @@ focus = {
 			has_completed_focus = GRE_declare_martial_law
 			NOT = {
 				has_country_flag = great_war_loser
+			}
+		}
+		bypass = {
+			OR = {
+				SOV = {
+					has_country_flag = russian_civil_war_winner
+				}
+				RUS = {
+					OR = {
+						exists = no
+						has_country_flag = great_war_winner
+						has_country_flag = russian_civil_war_winner
+						AND = {
+							has_country_flag = great_war_loser
+							NOT = {
+								has_global_flag = russian_civil_war
+							}
+						}
+					}
+				}		
 			}
 		}
 		x = 2
