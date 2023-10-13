@@ -215,6 +215,11 @@ country_event = {
 					}
 					unlock_national_focus = CHI_fight_against_famine
 				}
+				# Prevents early surrender
+				add_timed_idea = {
+					idea = CHI_idea_revolutionary_fervor
+					days = 30 # Maximum time for second revolt to happen: 30 days
+				}
 			}
 			QIN = {
 				remove_ideas = QIN_idea_tongmenghui
@@ -392,6 +397,55 @@ country_event = {
 	option = {
 		# Support Qing
 		name = ww1_xinhai.2.a
+		hidden_effect = {
+			CHI = {
+				country_event = {
+					days = 20
+					random_days = 10
+					id = ww1_xinhai.3
+				}
+				declare_war_on = {
+					target = QIN
+					type = civil_war
+				}
+				add_civil_war_target = QIN
+				load_oob = "PRC_1911_Wuchang"
+				add_ideas = CHI_idea_xinhai_revolution
+			}
+			set_global_flag = QIN_chosen
+			add_popularity = {
+				ideology = neutrality
+				popularity = 1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.21
+			}
+			QIN = {
+				if = {
+					limit = {
+						MON = {
+							exists = yes
+						}
+					}
+					declare_war_on = {
+						target = MON
+						type = annex_everything
+					}
+				}
+				if = {
+					limit = {
+						TAN = {
+							exists = yes
+						}
+					}
+					declare_war_on = {
+						target = TAN
+						type = annex_everything
+					}
+				}
+			}
+		}
 		custom_effect_tooltip = qing_chosen
 		set_global_flag = QIN_chosen
 		ai_chance = {

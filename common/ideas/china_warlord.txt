@@ -9,8 +9,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.15
-				stability_factor = -0.05
+				consumer_goods_factor = -0.3
 			}
 		}
 
@@ -50,7 +49,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -99,7 +98,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.22
 			}
 		}
 
@@ -189,7 +188,7 @@ ideas = {
 			removal_cost = -1
 			picture = SPR_seize_the_gold_reserves
 			modifier = {
-				consumer_goods_factor = -0.30
+				consumer_goods_factor = -0.5
 				political_power_factor = -0.30
 				stability_weekly_factor = -0.01
 			}
@@ -265,8 +264,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = 0.15
-				stability_factor = -0.10
+				consumer_goods_factor = 0.3
+				stability_factor = -0.05
 			}
 		}
 
