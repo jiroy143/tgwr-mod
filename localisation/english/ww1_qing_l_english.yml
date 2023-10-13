@@ -60,7 +60,7 @@
  QIN_united_china:0 "United China"
  QIN_united_china_desc:0 "China has collapsed. Petty warlords and their fiefdoms plague the lands. It's time to put them in their places."
  QIN_restore_the_nation:0 "Restore the Nation"
- QIN_restore_the_nation_desc:0 "The [GetXinhaiUprisingName] Revolution has wracked China to its core. All must do their part to mend and repair the nation."
+ QIN_restore_the_nation_desc:0 "The Xinhai Revolution has wracked China to its core. All must do their part to mend and repair the nation."
  QIN_militia_reorganization:0 "Militia Reorganization"
  QIN_militia_reorganization_desc:0 "The Chinese militias are disorganized. To combat this, we shall incorporate them into the army and train them to become effective combat units."
  QIN_economic_stabilization:0 "Economic Stabilization"
@@ -242,7 +242,7 @@
 #  ww1_qing.427.c:0 "An example must be made of Shandong's governor and army"
 # 
 #  ww1_qing.426.t:0 "Plotting in the West"
-#  ww1_qing.426.d:0 "Though the governor of Xinjiang, Yuan Dahua, is undyingly loyal to our government, the same cannot be said for the people there. Yuan Dahua has resigned in the face of unprecedented revolutionary activity, and local leaders are plotting an uprising to go in pair with the current [GetXinhaiUprisingName] Revolution. \n\nWe could divert troops and attention to the region to delay them until atleast the end of the Tongmenghui revolution, or we can simply face it."
+#  ww1_qing.426.d:0 "Though the governor of Xinjiang, Yuan Dahua, is undyingly loyal to our government, the same cannot be said for the people there. Yuan Dahua has resigned in the face of unprecedented revolutionary activity, and local leaders are plotting an uprising to go in pair with the current Xinhai Revolution. \n\nWe could divert troops and attention to the region to delay them until atleast the end of the Tongmenghui revolution, or we can simply face it."
 #  ww1_qing.426.a:0 "No matter, we crushed them before we will crush them again!"
 #  ww1_qing.426.b:0 "Divert garrisons, we cannot afford more revolutions right now"
 #  ww1_qing.426.c:0 "Contact loyalists within the region to delay them for now!"
