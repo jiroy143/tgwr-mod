@@ -6261,7 +6261,10 @@ foreign_politics = {
 					}
 				}
 				else = {
-					add_named_threat = ww1_china.187.t
+					add_named_threat = {
+						name = ww1_china.187.t
+						threat = 2
+					}
 					FROM = {
 						OVERLORD = {
 							country_event = {
