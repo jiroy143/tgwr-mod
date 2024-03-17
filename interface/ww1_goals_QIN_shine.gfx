@@ -1,5 +1,97 @@
-spriteTypes = {	
-	
+spriteTypes = {
+
+    SpriteType = { 
+        name = "GFX_focus_CHI_sun_shine"
+        texturefile = "gfx/interface/goals/focus_CHI_sun.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/focus_CHI_sun.png"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/focus_CHI_sun.png"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+	SpriteType = {
+		name = "GFX_QIN_korea_split_shine"
+		texturefile = "gfx/interface/goals/focus_QIN_korea.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_QIN_korea_split.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_QIN_korea_split.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_five_race_star_flag_shine"
+		texturefile = "gfx/interface/goals/five_race_star_flag.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/five_race_star_flag.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/five_race_star_flag.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 	SpriteType = {
 		name = "GFX_focus_qing_deal_shine"
 		texturefile = "gfx/interface/goals/focus_qing_deal.dds"
@@ -31,10 +123,72 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
+		name = "GFX_focus_concurrently_exclusive_shine"
+		texturefile = "gfx/interface/goals/focus_concurrently_exclusive.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_concurrently_exclusive.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_concurrently_exclusive.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_qing_imperial_shine"
+		texturefile = "gfx/interface/goals/focus_qing_imperial.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_qing_imperial.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_qing_imperial.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
 		name = "GFX_focus_summer_palace_communist_shine"
 		texturefile = "gfx/interface/goals/focus_summer_palace_communist.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_summer_palace_communist.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -62,10 +216,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_QIN_kang_youwei_shine"
 		texturefile = "gfx/interface/goals/focus_QIN_kang_youwei.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_QIN_kang_youwei.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -93,12 +247,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_QIN_qing_unity_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_qing_unity.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_qing_unity.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_qing_unity.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_qing_unity.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -111,7 +265,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_qing_unity.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_qing_unity.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -124,12 +278,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_dragon_over_japan_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_dragon_over_japan.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_dragon_over_japan.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon_over_japan.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon_over_japan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -142,7 +296,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon_over_japan.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon_over_japan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -155,10 +309,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_puyi_child_shine"
 		texturefile = "gfx/interface/goals/focus_puyi_child.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_puyi_child.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -186,12 +340,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_taiwan_shine"
-		texturefile = "gfx/interface/goals/focus_taiwan.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_taiwan.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_taiwan.png"
+			animationmaskfile = "gfx/interface/goals/focus_taiwan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -204,7 +358,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_taiwan.png"
+			animationmaskfile = "gfx/interface/goals/focus_taiwan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -217,10 +371,72 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
+		name = "GFX_focus_national_assembly_shine"
+		texturefile = "gfx/interface/goals/focus_national_assembly.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_national_assembly.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_national_assembly.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_great_qing_shine"
+		texturefile = "gfx/interface/goals/focus_great_qing.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_great_qing.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_great_qing.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
 		name = "GFX_focus_mongolia_shine"
 		texturefile = "gfx/interface/goals/focus_mongolia.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_mongolia.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -248,12 +464,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_QIN_rat_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_rat.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_rat.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_rat.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_rat.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -266,7 +482,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_rat.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_rat.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -281,10 +497,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_ox_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_ox.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_ox.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_ox.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_ox.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -297,7 +513,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_ox.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_ox.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -312,10 +528,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_tiger_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_tiger.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_tiger.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_tiger.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_tiger.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -328,7 +544,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_tiger.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_tiger.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -343,10 +559,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_rabbit_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_rabbit.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_rabbit.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_rabbit.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_rabbit.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -359,7 +575,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_rabbit.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_rabbit.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -374,10 +590,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_dragon_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_dragon.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_dragon.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -390,7 +606,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_dragon.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -405,10 +621,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_snake_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_snake.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_snake.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_snake.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_snake.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -421,7 +637,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_snake.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_snake.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -436,10 +652,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_horse_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_horse.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_horse.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_horse.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_horse.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -452,7 +668,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_horse.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_horse.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -467,10 +683,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_sheep_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_sheep.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_sheep.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_sheep.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_sheep.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -483,7 +699,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_sheep.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_sheep.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -498,10 +714,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_monkey_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_monkey.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_monkey.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_monkey.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_monkey.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -514,7 +730,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_monkey.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_monkey.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -529,10 +745,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_rooster_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_rooster.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_rooster.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_rooster.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_rooster.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -545,7 +761,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_rooster.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_rooster.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -560,10 +776,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_dog_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_dog.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_dog.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_dog.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_dog.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -576,7 +792,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_dog.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_dog.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -591,10 +807,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_pig_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_pig.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_pig.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_pig.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_pig.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -607,7 +823,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_pig.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_pig.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -622,10 +838,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_chinese_zodiac_shine"
-		texturefile = "gfx/interface/goals/focus_chinese_zodiac.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_chinese_zodiac.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_chinese_zodiac.png"
+			animationmaskfile = "gfx/interface/goals/focus_chinese_zodiac.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -638,7 +854,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_chinese_zodiac.png"
+			animationmaskfile = "gfx/interface/goals/focus_chinese_zodiac.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -652,10 +868,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 ####END OF ZODIAC
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_shikai_shine"
 		texturefile = "gfx/interface/goals/focus_shikai.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_shikai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -683,10 +899,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
+SpriteType = {
 		name = "GFX_focus_summer_palace_2_shine"
 		texturefile = "gfx/interface/goals/focus_summer_palace_2.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_summer_palace_2.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -702,6 +918,37 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_summer_palace_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_hong_kong_shine"
+		texturefile = "gfx/interface/goals/focus_hong_kong.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_hong_kong.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_hong_kong.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -717,7 +964,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_sun_tzu_shine"
 		texturefile = "gfx/interface/goals/focus_sun_tzu.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_sun_tzu.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -747,10 +994,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_QIN_korea_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_korea.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_korea.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_korea.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_korea.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -763,7 +1010,38 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_korea.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_korea.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_election_2_shine"
+		texturefile = "gfx/interface/goals/focus_election_2.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_election_2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_election_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -778,10 +1056,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_QIN_kuomintang_fire_shine"
-		texturefile = "gfx/interface/goals/focus_QIN_kuomintang_fire.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+		texturefile = "gfx/interface/goals/focus_QIN_kuomintang_fire.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_kuomintang_fire.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_kuomintang_fire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -794,7 +1072,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_QIN_kuomintang_fire.png"
+			animationmaskfile = "gfx/interface/goals/focus_QIN_kuomintang_fire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -810,7 +1088,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_sun_yat_sen_shine"
 		texturefile = "gfx/interface/goals/focus_sun_yat_sen.png"
-		effectFile = "gfx/FX/buttonstate.lua"
+				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_sun_yat_sen.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file

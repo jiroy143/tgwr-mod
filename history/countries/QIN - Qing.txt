@@ -1,7 +1,5 @@
 ﻿capital = 608
 
-set_country_flag = dont_trigger_political_event
-
 #-------------------------------------------------------
 #					GENERIC VALUES
 #-------------------------------------------------------
@@ -9,20 +7,28 @@ set_research_slots = 2
 set_stability = 0.47
 set_war_support = 0.19
 set_convoys = 64
+set_political_power = 70
+
+set_variable = { var_integration_cost = 100 }
+set_variable = { var_henan_rebel = 2 }
+set_variable = { var_hunan_rebel = 4 }
+set_variable = { var_jiangsu_rebel = 2 }
+set_variable = { var_guangxi_rebel = 3 }
+set_variable = { var_sichuan_rebel = 4 }
+set_variable = { var_yunnan_rebel = 4 }
+set_variable = { var_zhejiang_rebel = 3 }
+set_variable = { var_shaanxi_rebel = 3 }
+set_variable = { var_shandong_rebel = 4 }
+
+set_global_flag = QIN_flag_recent_edict
+set_global_flag = QIN_flag_recent_jud_edict
+
+set_country_flag = dont_trigger_political_event
 
 give_military_access = JAP #South Manchuria Railway
 give_military_access = GER #Qingdao–Jinan Railway
 
-diplomatic_relation = {
-	country = CER
-	relation = military_access
-	active = yes
-}
-diplomatic_relation = {
-	country = CER
-	relation = guarantee
-	active = yes
-}
+
 
 # country leaders from start
 recruit_character = QIN_zaifeng
@@ -98,12 +104,13 @@ recruit_character = QIN_yunnan_aviation_academy
 		electrical_engineering = 1
 		mechanical_engineering = 1
 		basic_train = 1
+        
 	}
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1909.8.30"
-		election_frequency = 48
-		elections_allowed = yes
+		election_frequency = 36
+		elections_allowed = no
 	}
 	set_popularities = {
 		democratic = 32
@@ -114,32 +121,79 @@ recruit_character = QIN_yunnan_aviation_academy
 	add_ideas = {
 		QIN_idea_xuantong_young
 		QIN_idea_low_legitimacy
-		QIN_idea_purchase_restriction
+		QIN_idea_political_corruption
+		QIN_idea_provincial_arsenals
 		QIN_idea_boxer_protocol
 		QIN_idea_beiyang_army
+		unequal_treaties
 		QIN_idea_tongmenghui
 		isolation
-		limited_exports
-		# unequal_treaties
 	}
-	# add_dynamic_modifier = { modifier = unequal_treaties_dm }
-	# add_dynamic_modifier = { modifier = qing_court_opp_dm }
-	# set_variable = { unequal_treaties_consumer_goods = 0.38 }
-	# set_variable = { unequal_treaties_research_speed = -0.5 }
-	# set_variable = { unequal_treaties_resources_to_market = 0.88 }
-	# set_variable = { unequal_treaties_infrastructure = -0.12 }
-	# set_variable = { unequal_treaties_military_factory = -0.25 }
-	# set_variable = { unequal_treaties_civilian_factory = -0.25 }
-	# set_variable = { unequal_treaties_dockyard = -0.25 }
-	# set_variable = { court_opp_pp_factor = -0.32 }
-	# set_country_flag = qing_russian_concession
-	# set_country_flag = qing_german_concession
-	# set_country_flag = qing_french_concession
-	# set_country_flag = qing_british_concession
-	# set_country_flag = qing_japanese_concession
-	# set_country_flag = qing_american_concession
-	# set_country_flag = qing_italian_concession
-	# set_country_flag = qing_austrian_concession
+	add_dynamic_modifier = { modifier = QIN_provincial_arsenals_dm }
+	add_dynamic_modifier = { modifier = unequal_treaties_dm }
+	add_dynamic_modifier = { modifier = qing_court_opp_dm }
+	set_variable = { unequal_treaties_consumer_goods = 0.38 }
+	set_variable = { unequal_treaties_research_speed = -0.5 }
+	set_variable = { unequal_treaties_resources_to_market = 0.88 }
+	set_variable = { unequal_treaties_infrastructure = -0.12 }
+	set_variable = { unequal_treaties_military_factory = -0.25 }
+	set_variable = { unequal_treaties_civilian_factory = -0.25 }
+	set_variable = { unequal_treaties_dockyard = -0.25 }
+	set_variable = { court_opp_pp_factor = -0.32 }
+	
+	set_variable = { boxer_protocol_consumer_goods = 0.05 }
+	set_variable = { boxer_protocol_infrastructure = 0.05 }
+
+	set_variable = { boxer_protocol_stability_weekly = -0.001 }
+	set_variable = { boxer_protocol_war_support = 0.05 }
+	
+	set_variable = { boxer_protocol_conscription = -0.005 }
+	set_variable = { boxer_protocol_training_time = 1.5 }
+	set_variable = { boxer_protocol_cap = -0.1 }
+	set_variable = { boxer_protocol_trade_cost = 5.0 }
+	set_variable = { boxer_protocol_forts = -1.5 }
+	
+	set_variable = { provincial_arsenals_max_factories = -0.75 }
+	
+	set_variable = { russian_factories = 0 }
+	set_variable = { german_factories = 0 }
+	set_variable = { british_factories = 0 }
+	set_variable = { french_factories = 0 }
+	set_variable = { japanese_factories = 0 }
+	set_variable = { american_factories = 0 }
+	set_variable = { italian_factories = 0 }
+	set_variable = { austrian_factories = 0 }
+	
+	
+	set_country_flag = qing_russian_concession
+	set_country_flag = qing_german_concession
+	set_country_flag = qing_french_concession
+	set_country_flag = qing_british_concession
+	set_country_flag = qing_japanese_concession
+	set_country_flag = qing_american_concession
+	set_country_flag = qing_italian_concession
+	set_country_flag = qing_austrian_concession
+	
+	add_dynamic_modifier = { modifier = qing_russian_dm }
+	add_dynamic_modifier = { modifier = qing_german_dm }
+	add_dynamic_modifier = { modifier = qing_british_dm }
+	add_dynamic_modifier = { modifier = qing_french_dm }
+	add_dynamic_modifier = { modifier = qing_japanese_dm }
+	add_dynamic_modifier = { modifier = qing_american_dm }
+	add_dynamic_modifier = { modifier = qing_italian_dm }
+	add_dynamic_modifier = { modifier = qing_austrian_dm }
+	
+	add_dynamic_modifier = { modifier = boxer_protocol_dm }
+	add_dynamic_modifier = { modifier = boxer_protocol_purchase_restriction_dm }
+	
+	#RUS = { add_offsite_building = { type = industrial_complex level = QIN.russian_factories } }
+	#GER = { add_offsite_building = { type = industrial_complex level = QIN.german_factories } }
+	#ENG = { add_offsite_building = { type = industrial_complex level = QIN.british_factories } }
+	#FRA = { add_offsite_building = { type = industrial_complex level = QIN.french_factories } }
+	#JAP = { add_offsite_building = { type = industrial_complex level = QIN.japanese_factories } }
+	#USA = { add_offsite_building = { type = industrial_complex level = QIN.american_factories } }
+	#ITA = { add_offsite_building = { type = industrial_complex level = QIN.italian_factories } }
+	#AUH = { add_offsite_building = { type = industrial_complex level = QIN.austrian_factories } }
 }
 
 if = {
@@ -190,325 +244,23 @@ if = {
 		name = "Kai Chi Class"
 		type = light_cruiser_1
 		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Fei Ting Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Chen Hai Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Fu Po Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Wei Yuen Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Hai Tung Hung Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Kuang Yuan Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Bagua Class"
-		type = destroyer_1
-		parent_version = 0
-		obsolete = yes
-	}
-	set_naval_oob = "QIN_1910_naval_legacy"
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		mtg_transport = 1
-		pre_dreadnoughts = 1
-	}
-	create_equipment_variant = {
-		name = "Dingyuan Class"
-		type = ship_hull_pre_dreadnought
-		#name_group = QIN_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_1
-			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Hai Chi Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = ship_light_medium_battery_1
-		}
-	}
-	create_equipment_variant = {
-		name = "Hai Yung Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_light_medium_battery_1
-		}
-	}
-	create_equipment_variant = {
-		name = "Nan Chen Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_light_battery_1
-		}
-	}
-	create_equipment_variant = {
-		name = "Pao Min Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_light_battery_1
-		}
-	}
-	create_equipment_variant = {
-		name = "Kai Chi Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_light_battery_1
-		}
-	}
-	create_equipment_variant = {
-		name = "Fei Ting Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Chen Hai Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Fu Po Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Wei Yuen Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Jiyuan Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Lei Lung Class"
-		type = ship_hull_light_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-	set_naval_oob = "QIN_1910_naval_mtg"
-}
-
-if = {
-	limit = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		transport = 1
-	}
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Dingyuan Class"
-		type = battleship_1
+		type = destroyer_1
 		parent_version = 0
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Hai Chi Class"
-		type = heavy_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Hai Yung Class"
-		type = heavy_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Nan Chen Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Pao Min Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Kai Chi Class"
-		type = light_cruiser_1
+		name = "Lei Cheng Class"
+		type = destroyer_1
 		parent_version = 0
 		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Fei Ting Class"
-		type = light_cruiser_1
+		type = destroyer_1
 		parent_version = 0
 		obsolete = yes
 	}
@@ -531,12 +283,6 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Wei Yuen Class"
-		type = light_cruiser_1
-		parent_version = 0
-		obsolete = yes
-	}
-	create_equipment_variant = {
 		name = "Hai Tung Hung Class"
 		type = light_cruiser_1
 		parent_version = 0
@@ -545,6 +291,48 @@ if = {
 	create_equipment_variant = {
 		name = "Kuang Yuan Class"
 		type = light_cruiser_1
+		parent_version = 0
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kuang King Class"
+		type = destroyer_1
+		parent_version = 0
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Chiang Yuan Class"
+		type = destroyer_1
+		parent_version = 0
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Chu Class"
+		type = destroyer_1
+		parent_version = 0
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kiang Ta Class"
+		type = destroyer_1
+		parent_version = 0
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Hu Peng Class"
+		type = destroyer_1
+		parent_version = 0
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Chien An Class"
+		type = destroyer_1
+		parent_version = 0
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kuang Ching Class"
+		type = destroyer_1
 		parent_version = 0
 		obsolete = yes
 	}
@@ -671,9 +459,26 @@ if = {
 			rear_1_custom_slot = ship_light_battery_1
 		}
 	}
+	#create_equipment_variant = {
+	#	name = "Fei Ting Class"
+	#	type = ship_hull_cruiser_1
+	#	#name_group = QIN_CL_HISTORICAL
+	#	parent_version = 0
+	#	modules = {
+	#		fixed_ship_battery_slot = ship_light_battery_1
+	#		fixed_ship_anti_air_slot = empty
+	#		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+	#		fixed_ship_radar_slot = empty
+	#		fixed_ship_engine_slot = cruiser_ship_engine_1
+	#		fixed_ship_armor_slot = ship_armor_cruiser_1
+	#		mid_1_custom_slot = ship_torpedo_1
+	#		mid_2_custom_slot = ship_secondaries_1
+	#		rear_1_custom_slot = empty
+	#	}
+	#}
 	create_equipment_variant = {
 		name = "Fei Ting Class"
-		type = ship_hull_cruiser_1
+		type = ship_hull_light_1
 		#name_group = QIN_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -681,10 +486,9 @@ if = {
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = empty
 		}
 	}
@@ -722,23 +526,23 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	create_equipment_variant = {
-		name = "Wei Yuen Class"
-		type = ship_hull_cruiser_1
-		#name_group = QIN_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
+	#create_equipment_variant = {
+	#	name = "Wei Yuen Class"
+	#	type = ship_hull_cruiser_1
+	#	#name_group = QIN_CL_HISTORICAL
+	#	parent_version = 0
+	#	modules = {
+	#		fixed_ship_battery_slot = ship_light_medium_battery_1
+	#		fixed_ship_anti_air_slot = empty
+	#		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+	#		fixed_ship_radar_slot = empty
+	#		fixed_ship_engine_slot = cruiser_ship_engine_1
+	#		fixed_ship_armor_slot = ship_armor_cruiser_1
+	#		mid_1_custom_slot = ship_secondaries_1
+	#		mid_2_custom_slot = empty
+	#		rear_1_custom_slot = empty
+	#	}
+	#}
 	create_equipment_variant = {
 		name = "Jiyuan Class"
 		type = ship_hull_cruiser_1
@@ -773,7 +577,197 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+	create_equipment_variant = {
+		name = "Lei Chung Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Wei Yuen Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Hai Tung Hung Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Kuang Yuan Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Kuang King Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Chiang Yuan Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Chu Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Chen Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Leih Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Hu Peng Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Chien An Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Kuang Ching Class"
+		type = ship_hull_light_1
+		#name_group = QIN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
 	set_naval_oob = "QIN_1910_naval_mtg"
 }
-
-country_event = { id = ww1_developer_note.6 days = 1 }

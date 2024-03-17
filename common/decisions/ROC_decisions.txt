@@ -1,0 +1,316 @@
+QIN_yuan_auction_category = {
+	CHI_mission_hold_nanjing = {
+		icon = GFX_decision_generic_operation
+		activation = {
+			has_war_with = QIN
+			NOT = {
+				has_global_flag = manchu_restoration
+			}
+			598 = {
+				is_controlled_by = CHI
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2000
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			598 = {
+				is_controlled_by = QIN
+			}
+		}
+		cancel_trigger = {
+			QIN = {
+				exists = no
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 598
+			}
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			effect_tooltip = {
+				QIN = {
+				if = {
+					limit = {
+						has_active_mission = QIN_shikai_joins_the_rebels_mission
+					}
+					add_days_mission_timeout = {
+						mission = QIN_shikai_joins_the_rebels_mission
+						days = 300
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.1
+					}
+				}
+				add_command_power = 10
+				army_experience = 50
+				add_war_support = 0.1
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+				}
+				}
+				CHI = {
+					add_command_power = -25
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -2000
+					}
+				}
+				set_global_flag = QIN_flag_failed_to_take_nanjing
+			}
+		}
+		priority = 8
+	}
+	CHI_seize_chongqing = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 125
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		target_trigger = {
+			FROM = {
+				tag = QIN
+			}
+		}
+		available = {
+			605 = {
+				is_fully_controlled_by = CHI
+			}
+		}
+		cancel_trigger = {
+			QIN = {
+				exists = no
+			}
+		}
+		target_trigger = {
+			FROM = {
+				tag = QIN
+			}
+		}
+		complete_effect = {
+			QIN = {
+				if = {
+					limit = {
+						has_active_mission = QIN_shikai_joins_the_rebels_mission
+					}
+					add_days_mission_timeout = {
+						mission = QIN_shikai_joins_the_rebels_mission
+						days = -20
+					}
+				}
+			}
+			army_experience = 75
+			add_war_support = 0.05
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+			QIN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2000
+				}
+			}
+		}
+		priority = 7
+	}
+	ROC_open_negotiations_with_shikai = {
+		#icon = GFX_decision_generic_operation
+		allowed = {
+			original_tag = CHI
+		} 
+		available = {
+			has_war_with = QIN
+			QIN = { has_global_flag = QIN_flag_accept_shikai }
+		}
+		
+		cost = 0
+		days_re_enable = 0
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			QIN = {
+				add_war_support = -0.1
+			}
+		}
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 0.05
+				surrender_progress < 0.05
+			}
+			modifier = {
+				factor = 0.2
+				QIN = { surrender_progress > 0.3 }
+			}
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		priority = 6
+	}
+	ROC_dec_destabilize_qing = {
+		icon = GFX_decision_generic_political_address
+		allowed = {
+			original_tag = CHI
+		} 
+		available = {
+			has_war_with = QIN
+			
+		}
+		target_trigger = {
+			FROM = {
+				tag = QIN
+			}
+		}
+		cost = 25
+		days_re_enable = 0
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = CHI_yuan_shikai
+						ruling_only = yes
+					}
+				}
+				QIN = {
+					add_war_support = -0.01
+				}
+			}
+			else = {
+				QIN = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.025
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 0.5
+				surrender_progress < 0.01
+			}
+			modifier = {
+				factor = 0.2
+				is_historical_focus_on = no
+				OR = {
+					surrender_progress < 0.1
+				}
+			}
+			modifier = {
+				factor = 0
+				QIN = { fascism < 0.15 }
+			}
+			modifier = {
+				factor = 2
+				QIN = { fascism > 0.5 }
+			}
+		}
+		priority = 1
+	}
+}
+
+political_actions = {
+	CHI_land_reform = {
+		icon = GFX_decision_generic_operation
+		allowed = {
+			is_china_or_warlord_no_tt = yes
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					region = 15
+					region = 143
+					region = 144
+					region = 145
+					region = 155
+					region = 164
+					region = 165
+					region = 200
+					state = 524
+				}
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 30
+		visible = {
+			is_china_or_warlord_no_tt = yes
+			controls_state = FROM
+			has_country_flag = CHI_flag_land_reform_underway
+		}
+		available = {
+			has_completed_focus = {
+				CHI_land_reform
+			}
+		}
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		cost = 10
+		remove_effect = {
+			FROM = {
+				every_possible_country = {
+					limit = {
+						is_china_or_warlord = yes
+						owns_state = 608
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				FROM = {
+					is_owned_by = PREV
+				}
+			}
+		}
+	}
+	CHI_decision_local_dictatorial_power = {
+		icon = GFX_decision_oppression
+		allowed = {
+			is_china_or_warlord_no_tt = yes
+		}
+		visible = {
+			is_china_or_warlord_no_tt = yes
+			has_global_flag = warlord_era
+			has_country_flag = CHI_cult_of_personality
+		}
+		available = {
+			is_subject = no
+			NOT = { has_government = fascism }
+			fascism > 0.40
+		}
+		cost = 75
+		complete_effect = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

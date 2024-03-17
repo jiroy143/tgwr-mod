@@ -1,20 +1,45 @@
-spriteTypes = {
+spriteTypes = {	
+
 	###Qing Goals
+	SpriteType = {
+		name = "GFX_focus_CHI_sun"
+		texturefile = "gfx/interface/goals/focus_CHI_sun.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_five_race_star_flag"
+		texturefile = "gfx/interface/goals/five_race_star_flag.png"
+	}
+	SpriteType = {
+		name = "GFX_QIN_korea_split"
+		texturefile = "gfx/interface/goals/focus_QIN_korea_split.png"
+	}
 	SpriteType = {
 		name = "GFX_focus_qing_deal"
 		texturefile = "gfx/interface/goals/focus_qing_deal.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_summer_palace_communist"
-		texturefile = "gfx/interface/goals/focus_summer_palace_communist.png"
+	name = "GFX_focus_concurrently_exclusive"
+	texturefile = "gfx/interface/goals/focus_concurrently_exclusive.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_kang_youwei"
-		texturefile = "gfx/interface/goals/focus_QIN_kang_youwei.png"
+	name = "GFX_focus_qing_imperial"
+	texturefile = "gfx/interface/goals/focus_qing_imperial.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_qing_unity"
-		texturefile = "gfx/interface/goals/focus_QIN_qing_unity.png"
+	name = "GFX_focus_summer_palace_communist"
+	texturefile = "gfx/interface/goals/focus_summer_palace_communist.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_QIN_kang_youwei"
+	texturefile = "gfx/interface/goals/focus_QIN_kang_youwei.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_QIN_qing_unity"
+	texturefile = "gfx/interface/goals/focus_QIN_qing_unity.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_dragon_over_japan"
+	texturefile = "gfx/interface/goals/focus_QIN_dragon_over_japan.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_chi_kaiserreich_sun_yat_sen"
@@ -25,95 +50,107 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_kaiserredux_qing_military.png"
 	}
 	SpriteType = {
-		name = "GFX_focus_dragon_over_japan"
-		texturefile = "gfx/interface/goals/focus_QIN_dragon_over_japan.png"
+	name = "GFX_focus_puyi_child"
+	texturefile = "gfx/interface/goals/focus_puyi_child.png"
 	}
 	SpriteType = {
-		name = "GFX_focus_puyi_child"
-		texturefile = "gfx/interface/goals/focus_puyi_child.png"
+	name = "GFX_focus_taiwan"
+	texturefile = "gfx/interface/goals/focus_taiwan.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_taiwan"
-		texturefile = "gfx/interface/goals/focus_taiwan.png"
+	name = "GFX_focus_national_assembly"
+	texturefile = "gfx/interface/goals/focus_national_assembly.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_mongolia"
-		texturefile = "gfx/interface/goals/focus_mongolia.png"
+	name = "GFX_focus_great_qing"
+	texturefile = "gfx/interface/goals/focus_great_qing.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_chinese_zodiac"
-		texturefile = "gfx/interface/goals/focus_chinese_zodiac.png"
+	name = "GFX_focus_mongolia"
+	texturefile = "gfx/interface/goals/focus_mongolia.png"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_pig"
-		texturefile = "gfx/interface/goals/focus_QIN_pig.png"
+	name = "GFX_focus_chinese_zodiac"
+	texturefile = "gfx/interface/goals/focus_chinese_zodiac.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_dog"
-		texturefile = "gfx/interface/goals/focus_QIN_dog.png"
+	name = "GFX_focus_QIN_pig"
+	texturefile = "gfx/interface/goals/focus_QIN_pig.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_rooster"
-		texturefile = "gfx/interface/goals/focus_QIN_rooster.png"
+	name = "GFX_focus_QIN_dog"
+	texturefile = "gfx/interface/goals/focus_QIN_dog.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_monkey"
-		texturefile = "gfx/interface/goals/focus_QIN_monkey.png"
+	name = "GFX_focus_QIN_rooster"
+	texturefile = "gfx/interface/goals/focus_QIN_rooster.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_sheep"
-		texturefile = "gfx/interface/goals/focus_QIN_sheep.png"
+	name = "GFX_focus_QIN_monkey"
+	texturefile = "gfx/interface/goals/focus_QIN_monkey.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_horse"
-		texturefile = "gfx/interface/goals/focus_QIN_horse.png"
+	name = "GFX_focus_QIN_sheep"
+	texturefile = "gfx/interface/goals/focus_QIN_sheep.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_snake"
-		texturefile = "gfx/interface/goals/focus_QIN_snake.png"
+	name = "GFX_focus_QIN_horse"
+	texturefile = "gfx/interface/goals/focus_QIN_horse.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_dragon"
-		texturefile = "gfx/interface/goals/focus_QIN_dragon.png"
+	name = "GFX_focus_QIN_snake"
+	texturefile = "gfx/interface/goals/focus_QIN_snake.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_rabbit"
-		texturefile = "gfx/interface/goals/focus_QIN_rabbit.png"
+	name = "GFX_focus_QIN_dragon"
+	texturefile = "gfx/interface/goals/focus_QIN_dragon.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_tiger"
-		texturefile = "gfx/interface/goals/focus_QIN_tiger.png"
+	name = "GFX_focus_QIN_rabbit"
+	texturefile = "gfx/interface/goals/focus_QIN_rabbit.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_ox"
-		texturefile = "gfx/interface/goals/focus_QIN_ox.png"
+	name = "GFX_focus_QIN_tiger"
+	texturefile = "gfx/interface/goals/focus_QIN_tiger.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_rat"
-		texturefile = "gfx/interface/goals/focus_QIN_rat.png"
+	name = "GFX_focus_QIN_ox"
+	texturefile = "gfx/interface/goals/focus_QIN_ox.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_shikai"
-		texturefile = "gfx/interface/goals/focus_shikai.png"
+	name = "GFX_focus_QIN_rat"
+	texturefile = "gfx/interface/goals/focus_QIN_rat.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_summer_palace_2"
-		texturefile = "gfx/interface/goals/focus_summer_palace_2.png"
+	name = "GFX_focus_shikai"
+	texturefile = "gfx/interface/goals/focus_shikai.png"
 	}
 	SpriteType = {
-		name = "GFX_focus_sun_tzu"
-		texturefile = "gfx/interface/goals/focus_sun_tzu.png"
+	name = "GFX_focus_summer_palace_2"
+	texturefile = "gfx/interface/goals/focus_summer_palace_2.png"
 	}
 	SpriteType = {
-		name = "GFX_focus_sun_yat_sen"
-		texturefile = "gfx/interface/goals/focus_sun_yat_sen.png"
+	name = "GFX_focus_hong_kong"
+	texturefile = "gfx/interface/goals/focus_hong_kong.dds"
 	}
 	SpriteType = {
-		name = "GFX_QIN_korea"
-		texturefile = "gfx/interface/goals/focus_QIN_korea.png"
+	name = "GFX_focus_sun_tzu"
+	texturefile = "gfx/interface/goals/focus_sun_tzu.png"
 	}
 	SpriteType = {
-		name = "GFX_focus_QIN_kuomintang_fire"
-		texturefile = "gfx/interface/goals/focus_QIN_kuomintang_fire.png"
+	name = "GFX_focus_election_2"
+	texturefile = "gfx/interface/goals/focus_election_2.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_sun_yat_sen"
+	texturefile = "gfx/interface/goals/focus_sun_yat_sen.png"
+	}
+	SpriteType = {
+	name = "GFX_QIN_korea"
+	texturefile = "gfx/interface/goals/focus_QIN_korea.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_QIN_kuomintang_fire"
+	texturefile = "gfx/interface/goals/focus_QIN_kuomintang_fire.dds"
 	}
 }

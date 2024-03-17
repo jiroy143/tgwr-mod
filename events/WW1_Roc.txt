@@ -1,0 +1,443 @@
+add_namespace = ww1_roc
+add_namespace = ww1_revolutionaryroc
+
+#ROC/CHI Events
+
+#Sun officially elected as provisional President 
+country_event = {
+	title = ww1_revolutionaryroc.13.t
+	desc = ww1_revolutionaryroc.13.d
+	id = ww1_revolutionaryroc.13
+	
+	#picture = 
+	
+	trigger = {
+		tag = CHI 
+		NOT = { has_global_flag = CHI_flag_beiyang_deal }
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ww1_revolutionaryroc.13.a
+		CHI_sun_yatsen = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = socialism
+					traits = {
+						father_of_the_republic
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = line_description
+		custom_effect_tooltip = CHI_effect_shikai_not_happy
+		QIN = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+		#Unlocks decision to negotiate with Shikai
+	}
+}
+# National Assembly 1911 (ROC)
+country_event = {
+	id = ww1_revolutionaryroc.10
+	title = ww1_revolutionaryroc.10.t
+	desc = ww1_revolutionaryroc.10.d
+	picture = GFX_report_event_china_infiltration
+	
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		has_global_flag = {
+			flag = xinhai_revolution 
+			days = 80
+		}
+		613 = {
+			is_controlled_by = CHI
+		}
+		NOT = {
+			has_global_flag = manchu_restoration
+			has_global_flag = CHI_flag_beiyang_deal
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { country_event = { id = ww1_revolutionaryroc.13 days = 5 } }
+	}
+	
+	option = {
+		name = ww1_revolutionaryroc.9.a
+		ai_chance = { factor = 10 }
+		add_political_power = 50
+	}
+}
+
+#Provisional Government of the ROC formed 
+country_event = {
+	title = ww1_revolutionaryroc.12.t
+	desc = ww1_revolutionaryroc.12.d
+	picture = report_event_chi_provgov
+	id = ww1_revolutionaryroc.12
+	
+	trigger = {
+		tag = CHI 
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+		name = ww1_revolutionaryroc.12.a
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+
+#Japanese Support
+country_event = {
+	title = ww1_revolutionaryroc.11.t
+	desc = ww1_revolutionaryroc.11.d
+	id = ww1_revolutionaryroc.11
+	
+	trigger = {
+		has_war_with = QIN
+	}
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = ww1_revolutionaryroc.11.a
+		add_political_power = 35
+	}
+}
+
+# Intro
+country_event = {
+	id = ww1_revolutionaryroc.9
+	title = ww1_revolutionaryroc.9.t
+	desc = ww1_revolutionaryroc.9.d
+	picture = GFX_report_event_china_infiltration
+	
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		has_war_with = QIN
+		has_global_flag = {
+			flag = xinhai_revolution 
+		}
+		NOT = {
+			has_global_flag = manchu_restoration
+		}
+	}
+	
+	option = {
+		name = ww1_revolutionaryroc.9.a
+		ai_chance = { factor = 10 }
+		add_war_support = 0.02
+		custom_effect_tooltip = xinhai_expands_tt
+	}
+}
+# Sichuan Offensive
+country_event = {
+	id = ww1_revolutionaryroc.8
+	title = ww1_revolutionaryroc.8.t
+	desc = ww1_revolutionaryroc.8.d
+	picture = GFX_report_event_china_infiltration
+	
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		has_war_with = QIN
+		has_global_flag = {
+			flag = xinhai_revolution
+			days > 35
+		}
+		NOT = {
+			has_global_flag = manchu_restoration
+		}
+		
+		605 = {
+			NOT = {
+				is_fully_controlled_by = CHI
+			}
+		}
+		620 = {
+			NOT = {
+				is_fully_controlled_by = QIN
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_revolutionaryroc.8.a
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = ROC_effect_all_of_sichuan
+		activate_mission = CHI_seize_chongqing
+		
+	}
+	option = {
+		name = ww1_revolutionaryroc.8.b
+		ai_chance = { factor = 0 }
+		add_stability = 0.02
+	}
+}
+
+
+#ROC events - made by Spinoplayz
+#######################
+
+#Birth of a Republic
+################################
+country_event = {
+	id = ww1_roc.1
+	title = ww1_roc.1.t
+	desc = ww1_roc.1.d
+	#picture = GFX_report_event_revolution_succeed
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		has_war = no
+	}
+    option = {
+		name = ww1_roc.1.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.05
+	}
+}
+
+#Sun Yat-Sen refuses to resign
+#####################################
+country_event = {
+	id = ww1_roc.2
+	title = ww1_roc.2.t
+	desc = ww1_roc.2.d
+	#picture = GFX_report_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_roc.2.a
+		hidden_effect = {
+			country_event = {
+				id = ww1_roc.7
+				days = 10
+			}
+		}
+	}
+}
+
+#Minsheng
+#############################
+country_event = {
+	id = ww1_roc.3
+	title = ww1_roc.3.t
+	desc = ww1_roc.3.d
+	#picture = GFX_report_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_roc.3.a
+	}
+}
+
+#National Revolutionary Army formed#
+###############################################
+country_event = {
+	id = ww1_roc.4
+	title = ww1_roc.4.t
+	desc = ww1_roc.4.d
+	#picture = GFX_report_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_roc.4.a
+	}
+}
+
+#Minzu#
+#######################
+country_event = {
+	id = ww1_roc.5
+	title = ww1_roc.5.t
+	desc = ww1_roc.5.d
+	#picture = GFX_report_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_roc.5.a
+	}
+}
+#Minquan#
+#############################
+country_event = {
+	id = ww1_roc.6
+	title = ww1_roc.6.t
+	desc = ww1_roc.6.d
+	#picture = GFX_report_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_roc.6.a
+	}
+}
+#National Restoration War#
+###############################
+country_event = {
+	id = ww1_roc.7
+	title = ww1_roc.7t
+	desc = ww1_roc.7d
+	#picture = GFX_report_
+	
+	is_triggered_only = yes
+	
+	option ={
+		name = ww1_roc.7.a
+		hidden_effect = {
+			country_event = {
+				id = ww1_roc.9
+				days = 10
+			}
+		}
+	}
+}
+
+#real National Restoration War#
+###############################
+country_event = {
+	id = ww1_roc.9
+	title = ww1_roc.9.t 
+	desc = ww1_roc.9.d 
+	#picture = GFX_report_ 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = ww1_roc.9.a 
+		set_global_flag = chinese_warlord_crisis
+		hidden_effect = {
+			if = {
+				limit = {
+					has_cosmetic_tag = CHI_uprising
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+}
+
+#National Restoration War event 2#
+##################################
+country_event = {
+	id = ww1_roc.10
+	title = ww1_roc.10.t 
+	desc = ww1_roc.10.d 
+	#picture = GFX_report_ 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = ww1_roc.10.a 
+		set_global_flag = chinese_warlord_crisis
+		hidden_effect = {
+			if = {
+				limit = {
+					has_cosmetic_tag = CHI_uprising
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+}
+
+#Bribe the Beiyang Warlords#
+############################
+
+country_event = {
+	id = ww1_roc.11
+	title = ww1_roc.11.t 
+	desc = ww1_roc.11.d 
+	#picture = GFX_report_ 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = ww1_roc.11.a
+		country_event = { #Bring them to the Negotiation Tables
+			id = ww1_roc.12
+			days = 10
+		}
+	}
+}
+
+#Bribe the beiyang Warlords 2#
+#############################
+country_event = {
+	id = ww1_roc.12
+	title = ww1_roc.12.t 
+	desc = ww1_roc.12.d 
+	#picture = GFX_report_ 
+
+	is_triggered_only = yes 
+
+	option = { #offer them to keep governance over their provinces 
+		name = ww1_roc.12.a
+		#country_event =  {
+		#	
+		#}
+	}
+	option = { #offer them a fortune and a vacation
+		name = ww1_roc.12.b
+		#country_event =  {
+		#	
+		#}
+	}
+	option = { #offer them support for their army and keep governance 
+		name = ww1_roc.12.c
+		#country_event = {
+		#	
+		#}
+	}
+}
+
+#Bribbe the beiyang Warlords 3 yes#
+###################################
+country_event = {
+	id = ww1_roc.13
+	title = ww1_roc.13.t 
+	desc = ww1_roc.13.d 
+	#picture = GFX_report_ 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = ww1_roc.13.a
+		#country_event = {
+		#	
+		#}
+	}
+}
+
+#BBribbe the beiyang warlords 4 no#
+###################################
+country_event = {
+	id = ww1_roc.14
+	title = ww1_roc.14.t 
+	desc = ww1_roc.14.d 
+	#picture = GFX_report_ 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = ww1_roc.14.a
+		#country_event = {
+		#
+		#}
+	}
+}
