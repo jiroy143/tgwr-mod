@@ -234,7 +234,9 @@ bookmarks = {
 				SPR_idea_terrible_conscription
 			}
 			focuses = {
-				
+				SPR_1910_general_election
+				SPR_the_carlist_empire
+				SPR_provisional_government
 			}
 		}
 
