@@ -9896,7 +9896,7 @@ focus_tree = {
 	focus = {
 		id = SPR_abd_el_krim_negotiates
 		mutually_exclusive = { focus = SPR_humiliating_defeat }
-		icon = GFX_focus_hoi4tgw_gasmask
+		icon = GFX_focus_generic_treaty
 		cost = 5 #days
 		x = 14
 		y = 23

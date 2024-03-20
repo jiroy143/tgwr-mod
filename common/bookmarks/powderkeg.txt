@@ -224,6 +224,20 @@ bookmarks = {
 			}
 		}
 
+		"SPR"={
+			minor = yes
+			history = "SPR_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				SPR_idea_revolutionary_calls_for_regional_autonomy
+				SPR_idea_strong_catholicism
+				SPR_idea_terrible_conscription
+			}
+			focuses = {
+				
+			}
+		}
+
 		"CAN"={
 			minor = yes
 			history = "CAN_POWDERKEG_DESC"
