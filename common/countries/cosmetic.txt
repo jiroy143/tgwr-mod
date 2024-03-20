@@ -1326,8 +1326,8 @@ SPR_carlists = {
 	color_ui = rgb { 242 109 0 }
 }
 SPR_social_liberals = {
-	color = rgb { 235 235 25 }
-	color_ui = rgb { 241 241 32 }
+	color = rgb { 246 154 63 }
+	color_ui = rgb { 246 154 63 }
 }
 SPR_el_liberal = {
 	color = rgb { 120 0 242 }

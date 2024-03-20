@@ -5865,8 +5865,8 @@ focus_tree = {
 				ruling_party = democratic
 				elections_allowed = yes
 				election_frequency = 24
-				long_name = SPR_democratic_spain
-				name = SPR_democratic_spain
+				long_name = SPR_social_liberals_spain_long
+				name = SPR_social_liberals_spain
 			}
 			set_political_party = {
 				ideology = democratic
