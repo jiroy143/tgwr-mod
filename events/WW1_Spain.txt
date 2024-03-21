@@ -1868,7 +1868,26 @@ country_event = {
 				}
 			}
 		}
-		add_ideas = SPR_alfonso_xiii
+		IF = {
+			limit = {has_country_leader = {
+				character = SPR_alfonso_carlos
+				ruling_only = yes
+			}
+			}
+			add_ideas = SPR_idea_alfonso_carlos
+
+
+		}
+		IF = {
+			limit = {has_country_leader = {
+				character = SPR_jaime_iii
+				ruling_only = yes
+			}
+			}
+			add_ideas = SPR_idea_jaime_iii
+
+
+		}
 		set_party_name = {
 			ideology = fascism
 			long_name = SPR_military_directory

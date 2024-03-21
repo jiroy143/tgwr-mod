@@ -69,6 +69,30 @@ ideas = {
 				political_power_factor = -0.05
 			}
 		}
+		SPR_idea_alfonso_carlos = {
+			allowed = {
+				original_tag = SPR
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+            has_cosmetic_tag = SPE
+				}
+			}
+		
+		SPR_idea_jaime_iii = {
+			allowed = {
+				original_tag = SPR
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+            has_cosmetic_tag = SPE
+				}
+			}
+		
 		SPR_alfonso_xiii = {
 			allowed = {
 				original_tag = SPR

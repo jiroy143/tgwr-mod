@@ -64,4 +64,12 @@ spriteTypes = {
 		name = "GFX_idea_llama_firearms"
 		texturefile = "gfx/interface/ideas/idea_llama_firearms.png"
 	}
+	spriteType = {
+		name = "GFX_idea_SPR_idea_jaime_iii"
+		texturefile = "gfx/interface/ideas/SPR/idea_SPR_idea_jaime_iii.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SPR_idea_alfonso_carlos"
+		texturefile = "gfx/interface/ideas/SPR/idea_SPR_idea_alfonso_carlos.png"
+	}
 }

@@ -1,4 +1,6 @@
 ﻿l_english:
+SPR_idea_jaime_iii:0 "Jaime III"
+SPR_idea_alfonso_carlos:0 "Alfonso Carlos"
  SPR_declare_a_republic:0 "Parliamentary Majority"
  SPR_declare_a_republic_desc:0 "With the Liberal Party with majority in parliament after the 1910 election Prime Minister Jose Canalejas plans to spin liberalism with social reform."
  SPR_electoral_reforms:0 "Spread the Importance of Voting"
@@ -319,9 +321,13 @@ SPR_convert_chopins_castle_into_tourism:0 "Chopins Castle Tourism"
 SPR_convert_chopins_castle_into_tourism_desc:0 ""
 SPR_president_melquiades:0 "President Malaquias"
 SPR_president_melquiades_desc:0 ""
+SPR_a_destoryed_assembly:0 "A Destroyed Assembly"
+SPR_a_destoryed_assembly_desc:0 ""
 
  
  #events and ideas and decisions and tooltips
+SPR_idea_expanded_consumer_goods:0 "Expanded Consumer Goods"
+SPR_idea_expanded_consumer_goods_desc:0 ""
 SPR_idea_land_against_the_rifs:0 "Land Against The Rifs"
 SPR_idea_land_against_the_rifs_desc:0 ""
 SPR_idea_collaboration_against_the_rifs:0 "Collaboration Against The Rifs"
@@ -933,7 +939,13 @@ SPR_flag_curbed_the_crisis:0 "Has Curbed The Crisis"
 SPR_flag_rivera_stays:0 "Rivera Has Decided To Stay"
 SPR_flag_rivera_resigns:0 "Rivera Hasn't Resigned"
 SPR_flag_rif_negotiations:0 "Rif Negotiations"
- 
+SPR_flag_junta_success_in_three:0 "The Juntas Have Succeded In Three"
+SPR_flag_junta_failure_in_three:0 "The Juntas Have Failed In Three"
+SPR_flag_assembly_failure_in_three:0 "The Assembly Has Succeded In Three"
+SPR_flag_assembly_success_in_three:0 "The Assembly Has Failed In Three"
+SPR_flag_strikes_failure_in_three:0 "The Strikes Have Failed In Three"
+SPR_flag_strikes_success_in_three:0 "The Strikes Have Succeded In Three"
+
 #Generals and Admirals
  SPR_the_people_are_happy:0 "The People are Happy"
  SPR_gauge_our_position:0 "Gauge our Position"
