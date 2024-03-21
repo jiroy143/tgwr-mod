@@ -1868,6 +1868,9 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			add_ideas = SPR_alfonso_xiii
+		
 		IF = {
 			limit = {has_country_leader = {
 				character = SPR_alfonso_carlos
@@ -1875,7 +1878,7 @@ country_event = {
 			}
 			}
 			add_ideas = SPR_idea_alfonso_carlos
-
+			remove_ideas = SPR_alfonso_xiii
 
 		}
 		IF = {
@@ -1885,9 +1888,11 @@ country_event = {
 			}
 			}
 			add_ideas = SPR_idea_jaime_iii
+			remove_ideas = SPR_alfonso_xiii
 
 
 		}
+	}
 		set_party_name = {
 			ideology = fascism
 			long_name = SPR_military_directory
