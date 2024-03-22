@@ -945,6 +945,8 @@ SPR_flag_assembly_failure_in_three:0 "The Assembly Has Succeded In Three"
 SPR_flag_assembly_success_in_three:0 "The Assembly Has Failed In Three"
 SPR_flag_strikes_failure_in_three:0 "The Strikes Have Failed In Three"
 SPR_flag_strikes_success_in_three:0 "The Strikes Have Succeded In Three"
+SPR_flag_france_refuses_to_join:0 "France Has Decided Not To Join The War"
+SPR_flag_france_joins_the_war:0 "France Has Decided To Join The War"
 
 #Generals and Admirals
  SPR_the_people_are_happy:0 "The People are Happy"
