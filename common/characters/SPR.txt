@@ -214,7 +214,7 @@ characters={
 				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
 			}
 			army={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				large="gfx/leaders/SPR/SPR_jose_cavalcanti.png"
 			}
 		}
 		corps_commander={
@@ -254,7 +254,7 @@ characters={
 				small="gfx/interface/ideas/idea_europe_generic_land_5.dds"
 			}
 			army={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+				large="gfx/leaders/SPR/SPR_eduardo_lopez_ochoa.png"
 			}
 		}
 		corps_commander={
@@ -273,7 +273,7 @@ characters={
 				small="gfx/interface/ideas/idea_europe_generic_land_6.dds"
 			}
 			army={
-				large="gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"
+				large="gfx/leaders/SPR/SPR_severiano_martinez_anido.png"
 			}
 		}
 		corps_commander={
@@ -302,6 +302,146 @@ characters={
 			attack_skill=1
 			defense_skill=1
 			planning_skill=2
+			logistics_skill=2
+			#legacy_id=86032
+		}
+	}
+	SPR_agustin_de_luque_y_coca={
+		name="SPR_agustin_de_luque_y_coca"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_agustin_de_luque_y_coca.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=4
+			#legacy_id=86032
+		}
+	}
+	SPR_jose_marina_vega={
+		name="SPR_jose_marina_vega"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_jose_marina_vega.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			#legacy_id=86032
+		}
+	}
+	SPR_felipe_alfau_mendoza={
+		name="SPR_felipe_alfau_mendoza"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_felipe_alfau_mendoza.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=5
+			#legacy_id=86032
+		}
+	}
+	SPR_diego_munos_eldow={
+		name="SPR_diego_munos_eldow"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_diego_munos_eldow.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=5
+			#legacy_id=86032
+		}
+	}
+	SPR_antero_rubin={
+		name="SPR_antero_rubin"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_antero_rubin.png"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=5
+			#legacy_id=86032
+		}
+	}
+	SPR_ramon_echague={
+		name="SPR_ramon_echague"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_ramon_echague.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=5
+			#legacy_id=86032
+		}
+	}
+	SPR_antonio_tovar={
+		name="SPR_antonio_tovar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_antonio_tovar.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
 			logistics_skill=2
 			#legacy_id=86032
 		}
@@ -476,10 +616,21 @@ characters={
 				}
 				cost = 100
 		}
+		corps_commander={
+			traits={}
+			skill=2
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
 		name="SPR_angel_aznar"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
+			}
+			army = {
+				large="gfx/leaders/SPR/SPR_angel_aznar.png"
 			}
 		}
 	}
@@ -498,7 +649,7 @@ characters={
 		name="SPR_diego_de_los_rios"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_6"
+				small="gfx/interface/ideas/SPR/idea_SPR_diego_de_los_rios.png"
 			}
 		}
 	}
@@ -514,10 +665,21 @@ characters={
 				}
 				cost = 100
 		}
+		corps_commander={
+			traits={}
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
 		name="SPR_julio_gonzales_parrado"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_5"
+				small="gfx/interface/ideas/SPR/idea_SPR_julio_gonzales_parrado.png"
+			}
+			army={
+				large="gfx/leaders/SPR/SPR_julio_gonzales_parrado.png"
 			}
 		}
 	}
@@ -536,8 +698,19 @@ characters={
 		name="SPR_valeriano_weyler"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_4"
+				small="gfx/interface/ideas/SPR/idea_SPR_valeriano_weyler.png"
 			}
+			army = {
+				large="gfx/leaders/SPR/SPR_valeriano_weyler.png"
+			}
+		}
+		field_marshal={
+			traits={}
+			skill=1
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=2
 		}
 	}
 	SPR_alberto_bayo={
@@ -1050,24 +1223,7 @@ characters={
 			logistics_skill=1
 		}
 	}
-	
-	SPR_don_carlos={
-		name="SPR_don_carlos"
-		portraits={
-			army={
-				large="gfx/leaders/SPR/SPR_don_carlos.png"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-		}
-	}
-	
+		
 	SPR_emilio_mola={
 		name="SPR_emilio_mola"
 		portraits={

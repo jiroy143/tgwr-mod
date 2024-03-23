@@ -4766,7 +4766,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_the_new_spanish_armada
-		icon = GFX_goal_CAN_fleet_doctrine
+		icon = GFX_SPR_the_new_spanish_armada
 		cost = 5 #days
 		x = 0
 		y = 4

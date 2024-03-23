@@ -31,4 +31,8 @@ spriteTypes = {
 		name = "GFX_SPN_alfonso_carlos_icon"
 		texturefile = "gfx/interface/goals/SPN_alfonso_carlos_icon.png"
 	}
+	SpriteType = {
+		name = "GFX_SPR_the_new_spanish_armada"
+		texturefile = "gfx/interface/goals/SPR/focus_SPR_the_new_spanish_armada.png"
+	}
 }

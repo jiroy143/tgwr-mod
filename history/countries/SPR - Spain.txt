@@ -31,9 +31,7 @@ recruit_character = SPR_alfonso_carlos
 recruit_character = SPR_manuel_fernandez_silvestre
 recruit_character = SPR_gonzalo_queipo_de_llano
 recruit_character = SPR_miguel_primo_de_rivera
-recruit_character = SPR_fernando_primo_de_rivera
 recruit_character = SPR_jose_cavalcanti
-recruit_character = SPR_francisco_gomezjordana
 recruit_character = SPR_eduardo_lopez_ochoa
 recruit_character = SPR_severiano_martinez_anido
 recruit_character = SPR_miguel_cabanellas
@@ -62,17 +60,19 @@ recruit_character = SPR_enrique_orozco
 recruit_character = SPR_julio_gonzales_parrado
 recruit_character = SPR_valeriano_weyler
 recruit_character = SPR_diego_de_los_rios
+recruit_character = SPR_agustin_de_luque_y_coca
+recruit_character = SPR_jose_marina_vega
+recruit_character = SPR_felipe_alfau_mendoza
+recruit_character = SPR_diego_munos_eldow
+recruit_character = SPR_antero_rubin
+recruit_character = SPR_ramon_echague
+recruit_character = SPR_antonio_tovar
+
 
 #Added Generals
 
 recruit_character = SPR_sanjurjo_y_scanell
-recruit_character = SPR_ramon_acha
-recruit_character = SPR_mariano_gomez_zamalloa
 recruit_character = SPR_juan_picasso
-recruit_character = SPR_jose_aranguren
-recruit_character = SPR_emilio_mola
-recruit_character = SPR_don_carlos
-recruit_character = SPR_antonio_aranda
 
 set_variable = { SPR_changing_politics_variable = 0 }
 
