@@ -5182,6 +5182,33 @@ country_event = {
 		}
 	}
 }
+#Death Of diego de los rios
+country_event = {
+	id = ww1_spain.173
+	title = ww1_spain.173.t
+	desc = ww1_spain.173.d
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = yes
+	trigger = {
+		original_tag = SPR
+		date > 1911.1.1
+		has_character = SPR_diego_de_los_rios
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		hidden_effect = {
+			retire_character = SPR_diego_de_los_rios
+		}
+	}
+	option = {
+		name = ww1_spain.173.a
+		effect_tooltip = {
+			retire_character = SPR_diego_de_los_rios
+		}
+	}
+}
 
 #Test
 country_event = {

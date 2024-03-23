@@ -364,6 +364,49 @@ characters={
 			}
 		}
 	}
+	SPR_francisco_aguilera={
+		advisor={
+			slot = high_command
+			idea_token = SPR_francisco_aguilera
+			allowed  = {
+					original_tag  = SPR
+				}
+				ledger  = army 
+				traits  = {
+					army_entrenchment_2 
+				}
+				cost = 100
+		}
+		name="SPR_francisco_aguilera"
+		portraits={
+			army={
+				small="gfx/interface/ideas/SPR/idea_SPR_francisco_aguilera.png"
+			}
+		}
+	}
+	SPR_enrique_orozco={
+		advisor={
+			slot = high_command
+			idea_token = SPR_enrique_orozco
+			allowed  = {
+					original_tag  = SPR
+				}
+				ledger  = army 
+				allowed  = {
+					original_tag  = SPR
+				}
+				ledger  = navy 
+				traits  = {
+					navy_naval_air_defense_1 
+				}
+		}
+		name="SPR_enrique_orozco"
+		portraits={
+			army={
+				small="gfx/interface/ideas/SPR/idea_SPR_enrique_orozco.png"
+			}
+		}
+	}
 	SPR_jose_pidal={
 		advisor={
 			slot = high_command
@@ -437,6 +480,63 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	SPR_diego_de_los_rios={
+		advisor={
+			slot = army_chief
+			idea_token = SPR_diego_de_los_rios
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				cost = 100
+		}
+		name="SPR_diego_de_los_rios"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+	SPR_julio_gonzales_parrado={
+		advisor={
+			slot = army_chief
+			idea_token = SPR_julio_gonzales_parrado
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				cost = 100
+		}
+		name="SPR_julio_gonzales_parrado"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	SPR_valeriano_weyler={
+		advisor={
+			slot = army_chief
+			idea_token = SPR_valeriano_weyler
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				cost = 100
+		}
+		name="SPR_valeriano_weyler"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
 			}
 		}
 	}
