@@ -109,7 +109,6 @@ focus_tree = {
 			add_stability = 0.05
 			add_war_support = -0.1
 			custom_effect_tooltip = FRA_join_democrats_socialists_2
-			custom_effect_tooltip = FRA_get_democrats_socialists_seats
 			if = {
 				limit = {
 					has_game_rule = {
@@ -1118,29 +1117,10 @@ focus_tree = {
 			show_ideas_tooltip = FRA_jean_jaures_adv
 			custom_effect_tooltip = FRA_join_socialists
 			custom_effect_tooltip = FRA_get_socialists_seats
-			set_variable = {
-				var = democrat_alliance
-				value = 0
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = SFIO
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = independent_socialist
-			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
-			reload_parliament_gui = yes
+			FRA_clear_all_alliance = yes
+			set_country_flag = SFIO_allied
+			set_country_flag = independent_socialist_allied
+			FRA_recalculate_parliament_alliance = yes
 			if = {
 				limit = {
 					has_game_rule = {
@@ -1303,6 +1283,17 @@ focus_tree = {
 			FOCUS_FILTER_INTERNAL_AFFAIRS
 		}
 		cost = 5
+		offset = {
+			x = 8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = FRA_ww1_the_social_democrat_compromise
+			}
+		}
 		x = 3
 		y = 1
 	}
@@ -1514,21 +1505,6 @@ focus_tree = {
 				var = democratic_republican_alliance
 				value = nationalists
 			}	#gaining all fascists seats
-			
-			add_to_variable = {
-				var = democrat_alliance
-				value = nationalists
-			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
 			set_variable = {
 				var = nationalists
 				value = 0
@@ -1539,13 +1515,24 @@ focus_tree = {
 			set_variable = {
 				parliament_seat_array^9 = nationalists
 			}
-			reload_parliament_gui = yes
+			FRA_recalculate_parliament_alliance = yes
 		}
 		ai_will_do = {
 			factor = 50
 		}
 		search_filters = {
 			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
+		offset = {
+			x = 8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = FRA_ww1_the_social_democrat_compromise
+			}
 		}
 		cost = 5
 		x = 0
@@ -1561,33 +1548,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = FRA_ally_democratic_republican_alliance
-			set_variable = {
-				var = democrat_alliance
-				value = 0
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = SFIO
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = independent_socialist
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = democratic_republican_alliance
-			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
-			reload_parliament_gui = yes
+			set_country_flag = democratic_republican_alliance_allied
+			FRA_recalculate_parliament_alliance = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -1680,15 +1642,11 @@ focus_tree = {
 			set_variable = {
 				var = independent_socialist
 				value = 0
-			}			# theses parties disapear
+			}# theses parties disapear
 			set_variable = {
 				var = democratic_republican_alliance
 				value = 0
-			}			# theses parties disapear
-			set_variable = {
-				var = democrat_alliance
-				value = SFIO
-			}
+			}# theses parties disapear
 			set_variable = {
 				parliament_seat_array^0 = SFIO
 			}
@@ -1698,17 +1656,7 @@ focus_tree = {
 			set_variable = {
 				parliament_seat_array^2 = democratic_republican_alliance
 			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
-			reload_parliament_gui = yes
+			FRA_recalculate_parliament_alliance = yes
 			set_country_flag = FRA_independent_socialist_fuzed_with_SFIO
 			set_country_flag = FRA_democratic_republican_alliance_fuzed_with_SFIO
 		}
@@ -1752,28 +1700,35 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			random_list = {
-				50 = {
-					set_country_flag = FRA_anarchists_will_be_dominants
-				}
-				50 = {
-					set_country_flag = FRA_reformists_will_be_dominants
-				}
-			}
-			set_cosmetic_tag = FRA_socialism_not_commune
-			every_other_country = {
-				limit = {
-					is_subject_of = ROOT
-					OR = {
-						tag = ALG
-						tag = MOR
-						tag = TUN
-						tag = MLI
-						tag = IND
+			custom_effect_tooltip = FRA_ally_radicals
+			set_country_flag = radical_party_allied
+			FRA_recalculate_parliament_alliance = yes
+		
+			hidden_effect = {
+				random_list = {
+					50 = {
+						set_country_flag = FRA_anarchists_will_be_dominants
+					}
+					50 = {
+						set_country_flag = FRA_reformists_will_be_dominants
 					}
 				}
-				set_cosmetic_tag = FRA_socialist_red_alone
+				set_cosmetic_tag = FRA_socialism_not_commune
+				every_other_country = {
+					limit = {
+						is_subject_of = ROOT
+						OR = {
+							tag = ALG
+							tag = MOR
+							tag = TUN
+							tag = MLI
+							tag = IND
+						}
+					}
+					set_cosmetic_tag = FRA_socialist_red_alone
+				}
 			}
+			
 			custom_effect_tooltip = FRA_mention_de_censure
 			custom_effect_tooltip = FRA_mention_de_censure_socialist
 			if = {
@@ -1791,31 +1746,20 @@ focus_tree = {
 				}
 			}
 			
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = yes
-			}
-
+			
 			news_event = ww1_france.41
-			every_other_country = {
-				limit = {
-					is_guaranteed_by = ROOT
-					NOT = {
-						has_government = communism
-					}
-				}
-				diplomatic_relation = {
-					country = PREV
-					relation = guarantee
-					active = no
-				}
-			}
 			hidden_effect = {
 				country_event = {
 					id = ww1_france.398
 					days = 42
 				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+				}
+				remove_french_presidents = yes
 			}
+			add_ideas = FRA_alexandre_millerand
 		}
 		ai_will_do = {
 			factor = 1000
@@ -1938,6 +1882,11 @@ focus_tree = {
 				id = FRA_anarchists_reformists
 				range = anarchists_high
 			}
+			NOT = {
+				has_country_leader = {
+					character = FRA_gouvernement_provisoire
+				}
+			}
 		}
 		mutually_exclusive = {
 			focus = FRA_reformists_dominant
@@ -2048,6 +1997,17 @@ focus_tree = {
 		}
 		available = {
 			has_government = communism
+			OR = {
+				has_idea = FRA_idea_union_sacree
+				ROOT = {
+					check_variable = {
+						democrat_alliance > 150
+					}
+					custom_trigger_tooltip = {
+						tooltip = FRA_150_seats
+					}
+				}
+			}
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -2087,6 +2047,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = FRA_anticipated_elections
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		relative_position_id = FRA_anarchists_dominant
+		prerequisite = {
+			focus = FRA_anarchists_dominant
+		}
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_anticipated_elections_tt
+			set_country_flag = FRA_SFIO_want_elections_now
+			custom_effect_tooltip = FRA_no_more_parliament_tt
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
+		cost = 5
+		x = -3
+		y = 2
+	}
+
+	focus = {
 		id = FRA_reformists_dominant
 		icon = GFX_goal_FRA_form_the_popular_labour_service
 		relative_position_id = FRA_ww1_mention_de_censure
@@ -2104,6 +2090,11 @@ focus_tree = {
 			is_power_balance_in_range = {
 				id = FRA_anarchists_reformists
 				range = reformists_high
+			}
+			NOT = {
+				has_country_leader = {
+					character = FRA_gouvernement_provisoire
+				}
 			}
 		}
 		completion_reward = {
@@ -2133,6 +2124,17 @@ focus_tree = {
 			focus = FRA_reformists_dominant
 		}
 		available = {
+			OR = {
+				has_idea = FRA_idea_union_sacree
+				ROOT = {
+					check_variable = {
+						democrat_alliance > 150
+					}
+					custom_trigger_tooltip = {
+						tooltip = FRA_150_seats
+					}
+				}
+			}
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -2233,14 +2235,34 @@ focus_tree = {
 				id = ww1_france.400
 				hours = 8
 			}
-			every_country = {
-				limit = {
-					is_subject_of = FRA
-					has_cosmetic_tag = FRA_socialist_red_alone
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+						has_cosmetic_tag = FRA_socialist_red_alone
+					}
+					drop_cosmetic_tag = yes
+					if = {
+						limit = {
+							tag = IND
+						}
+						set_cosmetic_tag = IND_FRA
+					}
+					if = {
+						limit = {
+							tag = MOR
+						}
+						set_cosmetic_tag = MOR_FRA
+					}
+					if = {
+						limit = {
+							tag = TUN
+						}
+						set_cosmetic_tag = TUN_FRA
+					}
 				}
 				drop_cosmetic_tag = yes
 			}
-			drop_cosmetic_tag = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -2282,6 +2304,56 @@ focus_tree = {
 		y = 1
 	}
 
+	focus = {
+		id = FRA_support_the_effort_the_guerre
+		icon = GFX_goal_french_army
+		relative_position_id = FRA_normalization_of_the_party
+		prerequisite = {
+			focus = FRA_normalization_of_the_party
+			focus = FRA_union_at_all_prices
+		}
+		available = {
+			has_war = yes
+			OR = {
+				has_idea = FRA_idea_union_sacree
+				ROOT = {
+					check_variable = {
+						democrat_alliance > 250
+					}
+					custom_trigger_tooltip = {
+						tooltip = FRA_250_seats
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = FRA_idea_pacifist_strike
+				}
+				remove_ideas = FRA_idea_pacifist_strike
+			}
+			if = {
+				limit = {
+					has_idea = FRA_anti_war_sentiment
+				}
+				remove_ideas = FRA_anti_war_sentiment
+			}
+			add_war_support = 0.10
+			add_ideas = FRA_idea_ils_ne_passeront_pas
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
+		cost = 5
+		x = 1
+		y = 1
+	}
+
 	###############################################################
 	# The Social-democrat compromise - alternatve democratic PATH
 	###############################################################
@@ -2315,7 +2387,6 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			custom_effect_tooltip = FRA_join_democrats_socialists
-			custom_effect_tooltip = FRA_get_democrats_socialists_seats
 			if = {
 				limit = {
 					has_game_rule = {
@@ -3583,25 +3654,11 @@ focus_tree = {
 			show_ideas_tooltip = FRA_charles_maurras
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = FRA_georges_valois
-			set_variable = {
-				var = democrat_alliance
-				value = 0
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = popular_liberal_action
-			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
-			reload_parliament_gui = yes
+			FRA_clear_all_alliance = yes
+			set_country_flag = popular_liberal_action_allied
+			FRA_recalculate_parliament_alliance = yes
+
+
 			if = {
 				limit = {
 					has_game_rule = {
@@ -4153,21 +4210,8 @@ focus_tree = {
 			set_variable = {
 				parliament_seat_array^10 = 0
 			}
-			set_variable = {
-				var = democrat_alliance
-				value = seatNumbers
-			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
-			reload_parliament_gui = yes
+			FRA_recalculate_parliament_alliance = yes
+
 		}
 		ai_will_do = {
 			factor = 10
@@ -4704,41 +4748,11 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			custom_effect_tooltip = FRA_far_right_alliance
-			set_variable = {
-				var = democrat_alliance
-				value = 0
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = popular_liberal_action
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = nationalists
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = independent_radicals
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = independent_republicans
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = conservatives
-			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
-			reload_parliament_gui = yes
+			set_country_flag = independent_republicans_allied
+			set_country_flag = conservatives_allied
+			set_country_flag = popular_liberal_action_allied
+			set_country_flag = nationalists_allied
+			FRA_recalculate_parliament_alliance = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -4795,45 +4809,7 @@ focus_tree = {
 			set_variable = {
 				parliament_seat_array^8 = popular_liberal_action
 			}
-			set_variable = {
-				var = democrat_alliance
-				value = 0
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = conservatives
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = independent_republicans
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = popular_liberal_action
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = nationalists
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = independent_radicals
-			}
-			add_to_variable = {
-				var = democrat_alliance
-				value = independent_republicans
-			}
-			set_variable = {
-				var = democrat_alliance_percent
-				value = democrat_alliance
-			}
-			multiply_variable = {
-				democrat_alliance_percent = 100
-			}
-			divide_variable = {
-				democrat_alliance_percent = seatNumbers
-			}
-			reload_parliament_gui = yes
+			FRA_recalculate_parliament_alliance = yes
 		}
 		ai_will_do = {
 			factor = 1

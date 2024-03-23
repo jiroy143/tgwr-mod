@@ -2399,13 +2399,7 @@ focus_tree = {
 					has_idea = GER_idea_abwehr
 				}
 				RUS = {
-					NOT = {
-						has_idea = RUS_threat_of_revolution
-						hidden_trigger = {
-							has_idea = RUS_threat_of_revolution2
-							has_idea = RUS_threat_of_revolution3
-						}
-					}
+					has_threat_of_revolution = no
 				}
 			}
 		}
@@ -3904,8 +3898,9 @@ focus_tree = {
 						state = 268
 						state = 776
 						state = 902
+						state = 660
+						state = 769
 						region = 62
-						region = 183
 						region = 184
 						region = 227
 					}

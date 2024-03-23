@@ -1311,6 +1311,7 @@
  CRE_konstantinos_foumis:0 "Konstantinos Foumis"
  CRE_andrea_momferrato:0 "Andrea Momferrato"
  CRE_antonis_michelidakis:0 "Antonis Michelidakis"
+ CRE_prince_george:0 "Prígkipas Geórgios"
 
  # GUATEMALA
  GUA_carlos_herrera:0 "Carlos Herrera"
@@ -2556,6 +2557,80 @@
  RUS_nikolai_tchaikovsky:0 "Nikolai Tchaikovsky"
  RUS_fyodor_keller:0 "Fyodor Keller"
  RUS_nikolai_baratov:0 "Nikolai Baratov"
+ RUS_vasiliy_maklakov:0 "Vasiliy Maklakov"
+ RUS_andrei_pokrovskiy:0 "Andrei Pokrovskiy"
+ RUS_vladimir_volsky:0 "Vladimir Volsky"
+ RUS_nikolai_avksentiev:0 "Nikolai Avksentiev"
+ RUS_vasily_boldyrev:0 "Vasily Boldyrev"
+ RUS_vladimir_gorbatovsky:0 "Vladimir Gorbatovsky"
+ RUS_alexander_krivoshein:0 "Aleksandr Krivoshein"
+ RUS_platon_lechitsky:0 "Platon Lechitsky"
+ RUS_vladimir_may_mayevsky:0 "Vladimir May-Mayevsky"
+ RUS_nikolai_von_esen:0 "Nikolai Ottovich fon Essen"
+ RUS_fyodor_makhin:0 "Fyodor Makhin"
+ RUS_vladimir_pilkin:0 "Vladimir Pilkin"
+ RUS_sergey_rozanov:0 "Sergey Rozanov"
+ RUS_florian_fyodorovich:0 "Florian Fyodorovich"
+ RUS_pavel_petrov:0 "Pavel Petrov"
+ RUS_boris_fortunatov:0 "Boris Fortunatov"
+ RUS_nikolai_galkin:0 "Nikolai Galkin"
+ RUS_vladimir_lebedev:0 "Vladimir Lebedev"
+ RUS_georgiy_stark:0 "Georgiy Stark"
+
+ SIB_pyotr_vologodsky:0 "Pyotr Vologodsky"
+ SIB_pyotr_derber:0 "Pyotr Derber"
+ SIB_pavel_ivanov_rinov:0 "Pavel Ivanov-Rinov"
+ SIB_western_siberian_commissariat:0 "Western Siberian Commissariat"
+ SIB_ivan_mikhailov:0 "Ivan Mikhailov"
+ SIB_georgiy_telberg:0 "Georgiy Telberg"
+ SIB_viktor_pepelyayev:0 "Viktor Pepelyayev"
+ SIB_ivan_sukin:0 "Ivan Sukin"
+ SIB_aleksey_grishin_almazov:0 "Aleksey Grishin-Almazov"
+ SIB_mikhail_shatilov:0 "Mikhail Shatilov"
+ SIB_dmitriy_lebedev:0 "Dmitriy Lebedev"
+ SIB_vyacheslav_volkov:0 "Vyacheslav Volkov"
+ SIB_konstantin_sakharov:0 "Konstantin Sakharov"
+ SIB_evgeniy_vishnievskiy:0 "Evgeniy Vishnievskiy"
+ SIB_nikolai_kalashnikov:0 "Nikolai Kalashnikov"
+ SIB_evgeniy_kolosov:0 "Evgeniy Kolosov"
+ SIB_grigoriy_patushinsky:0 "Grigoriy Patushinsky"
+ 
+ URA_pavel_ivanov:0 "Pavel Ivanov"
+ URA_aleksandr_beloborodov:0 "Aleksandr Beloborodov"
+ 
+ TRC_fyodor_funtikov:0 "Fyodor Funtikov"
+ TRC_ippolit_savitskyy:0 "Ippolit Savitskyy"
+ TRC_yakov_zhitnikov:0 "Yakov Zhitnikov"
+ 
+ UCH_matvey_martynov:0 "Matvey Martynov"
+ UCH_vladimir_akutin:0 "Vladimir Akutin"
+ UCH_vladimir_volsky:0 "Vladimir Volsky"
+ 
+ ORE_ivan_akulinin:0 "Ivan Akulinin"
+ ORE_nikolai_anisimov:0 "Nikolai Anisimov"
+ ORE_nikolai_sukin:0 "Nikolai Sukin"
+ ORE_leonid_timashev:0 "Leonid Timashev"
+ ORE_aleksandr_vagin:0 "Aleksandr Vagin"
+ ORE_gervasiy_zhukov:0 "Gervasiy Zhukov"
+ ORE_samuel_zwilling:0 "Samuel Zwilling"
+ ORE_vadim_chaikin:0 "Vadim Chaikin"
+ 
+ USS_ivan_kalmykov:0 "Ivan Kalmykov"
+ 
+ ALT_grigory_choros_gurkin:0 "Grigory Choros-Gurkin"
+ ALT_aleksandr_kaygorodov:0 "Aleksandr Kaygorodov"
+ 
+ TAT_sadri_maqsudi:0 "Sadri Maqsudi"
+ 
+ BSK_yunus_bikbov:0 "Yunus Bikbov"
+ BSK_mstislav_kulaev:0 "Mstislav Kulaev"
+ BSK_kharis_yumogulov:0 "Kharis Yumogulov"
+ 
+ BYA_tsyben_zhamtsaran:0 "Tsyben Zhamtsaran"
+ BYA_lubsan_sandan_tsydenov:0 "Lubsan Sandan-Tsydenov"
+
+ # RUWALLAH
+ RWL_nuri_bin_hazaa_al_shalaan:0 "Nuri bin Hazaa Al Shalaan"
 
  # RIO GRANDE DO SUL
  RGS_borges_de_medeiros:0 "Borges de Medeiros"
