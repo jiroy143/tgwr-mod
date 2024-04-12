@@ -496,14 +496,9 @@
 					}
 				}
 				release_puppet = HUN
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					set_autonomy = {
-						target = HUN
-						autonomous_state = autonomy_tgwr_crownland
-					}
+				set_autonomy = {
+					target = HUN
+					autonomous_state = autonomy_tgwr_crownland
 				}
 				HUN = {
 					set_politics = {
@@ -773,6 +768,31 @@
 					has_cosmetic_tag = ASY_volunteers
 				}
 				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = russian_civil_war_ends }
+					has_global_flag = russian_civil_war
+					is_russian_tag = yes
+					is_subject = no
+					OR = {
+						is_faction_leader = yes
+						is_in_faction = no
+					}
+					NOT = {
+						any_country = {
+							is_russian_tag = yes
+							any_enemy_country = {
+								is_russian_tag = yes
+							}
+						}
+					}
+				}
+				ROOT = {
+					set_country_flag = russian_civil_war_winner
+				}
+				set_global_flag = russian_civil_war_ends
+				news_event = rusrevolt.19
 			}
 		}
 	}
@@ -1425,13 +1445,20 @@
 					original_tag = CAN
 					is_subject_of = ENG
 				}
-				if = {
-					limit = { has_dlc = "Together for Victory" }	
-					set_cosmetic_tag = CAN_UK
-					else = {
-						set_cosmetic_tag = CAN_ALY
+				set_cosmetic_tag = CAN_UK
+			}
+			if = {
+				limit = {
+					original_tag = NFL
+					OR = {
+						is_subject_of = ENG
+						AND = {
+							is_subject = yes
+							OVERLORD = { has_country_flag = has_british_monarchy }
+						}
 					}
 				}
+				set_cosmetic_tag = NFL_UK
 			}
 			if = {
 				limit = {
@@ -3002,13 +3029,20 @@
 					original_tag = CAN
 					is_subject_of = ENG
 				}
-				if = {
-					limit = { has_dlc = "Together for Victory" }	
-					set_cosmetic_tag = CAN_UK
-					else = {
-						set_cosmetic_tag = CAN_ALY
+				set_cosmetic_tag = CAN_UK
+			}
+			if = {
+				limit = {
+					original_tag = NFL
+					OR = {
+						is_subject_of = ENG
+						AND = {
+							is_subject = yes
+							OVERLORD = { has_country_flag = has_british_monarchy }
+						}
 					}
 				}
+				set_cosmetic_tag = NFL_UK
 			}
 			if = {
 				limit = {
@@ -5011,6 +5045,9 @@
 					set_country_flag = don_before_sra
 					country_event = ww1_sra.9
 				}
+				SRA = {
+					change_tag_from = DON
+				}
 			}
 			if = {
 				limit = {
@@ -5054,11 +5091,13 @@
 						KUB = {
 							set_state_controller = PREV
 						}	
+					}
+					234 = {
 						create_unit = {
 							division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.2" 
 							owner = KUB
 							allow_spawning_on_enemy_provs = yes
-							count = 1
+							count = 2
 						}
 					}
 				}
@@ -5081,18 +5120,10 @@
 					white_peace = {
 						tag = ROOT
 					}
-					if = {
-						limit = {
-							has_subject_autonomy_feature = yes
-						}
-						set_autonomy = {
-							target = ROOT
-							autonomous_state = autonomy_tgwr_balkan_federal_subject
-							freedom_level = 0.5
-						}
-						else = {
-							puppet = ROOT
-						}
+					set_autonomy = {
+						target = ROOT
+						autonomous_state = autonomy_tgwr_balkan_federal_subject
+						freedom_level = 0.5
 					}
 				}
 			}
@@ -6453,12 +6484,16 @@
 							has_cosmetic_tag = KOMUCH
 							has_cosmetic_tag = URA
 							has_cosmetic_tag = SIB
+							has_cosmetic_tag = SIB_communism
 							has_cosmetic_tag = RSO
 							has_cosmetic_tag = STV
 							has_cosmetic_tag = STV_communism
 							has_cosmetic_tag = TRC
 							has_cosmetic_tag = RUS_state
 							has_cosmetic_tag = POLITCENTRE
+							has_cosmetic_tag = PRI
+							has_cosmetic_tag = PRI_communism
+							has_cosmetic_tag = PRI_rozanov
 						}							
 					}
 					if = {
@@ -6486,15 +6521,7 @@
 					}
 					if = {
 						limit = {
-							OR = {
-								has_cosmetic_tag = SIB
-								AND = {
-									has_cosmetic_tag = RUS_state
-									NOT = {
-										has_country_flag = POLITCENTRE
-									}									
-								}								
-							}							
+							has_cosmetic_tag = SIB
 						}
 						set_cosmetic_tag = SIB_communism
 					}			
@@ -6512,6 +6539,16 @@
 						has_cosmetic_tag = TRC
 					}
 					set_cosmetic_tag = TRC_communism
+				}
+				if = {
+					limit = {
+						tag = PRI
+						OR = {
+							has_cosmetic_tag = PRI
+							has_cosmetic_tag = PRI_rozanov
+						}	
+					}
+					set_cosmetic_tag = PRI_communism
 				}
 				if = {
 					limit = {
@@ -7170,27 +7207,16 @@
 					}	
 					if = {
 						limit = {
-							OR = {
-								AND = {
-									has_cosmetic_tag = SIB_communism
-									has_country_flag = RUS_state
-								}						
-								AND = {
-									has_cosmetic_tag = POLITCENTRE
-									NOT = {
-										has_government = democratic
-									}									
-								}								
-							}							
+							has_cosmetic_tag = POLITCENTRE
+							NOT = {
+								has_government = democratic
+							}									
 						}
 						set_cosmetic_tag = RUS_state
 					}				
 					if = {
 						limit = {
-							has_cosmetic_tag = SIB_communism
-							NOT = {
-								has_country_flag = RUS_state
-							}							
+							has_cosmetic_tag = SIB_communism							
 						}
 						set_cosmetic_tag = SIB
 					}			
@@ -7201,6 +7227,13 @@
 						has_cosmetic_tag = TRC_communism
 					}	
 					set_cosmetic_tag = TRC
+				}
+				if = {
+					limit = {
+						tag = PRI
+						has_cosmetic_tag = PRI_communism
+					}	
+					set_cosmetic_tag = PRI
 				}
 				if = {
 					limit = {
@@ -7548,6 +7581,19 @@
 					}
 					set_cosmetic_tag = GRE_fascism
 				}
+				if = {
+					limit = {
+						tag = PRI
+						OR = {
+							has_cosmetic_tag = PRI
+							has_cosmetic_tag = PRI_communism
+						}	
+						has_country_leader = {
+							character = RUS_sergey_rozanov
+						}
+					}
+					set_cosmetic_tag = PRI_rozanov
+				}
 			}
 			if = {
 				limit = {
@@ -7579,6 +7625,13 @@
 						name = BEL_fascism_party
 						long_name = BEL_fascism_party
 					}				
+				}
+				if = {
+					limit = {
+						tag = PRI
+						has_cosmetic_tag = PRI_rozanov
+					}
+					set_cosmetic_tag = PRI
 				}
 			}								
 			if = {
@@ -8153,7 +8206,13 @@
 						is_in_faction_with = GRE
 						is_in_faction_with = MNT
 					}
-					FROM = { tag = TUR }
+					FROM = {
+						tag = TUR
+						NOT = {
+							has_war_with = SER
+							has_global_flag = kis_firstbalkanwar_victory
+						}
+					}
 				}
 				news_event = {
 					id = ww1_firstbalkan.116

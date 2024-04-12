@@ -39,7 +39,8 @@ French_socialism = {
 		FRA_ww1_revision_de_larmee_de_terre
 		FRA_ww1_fund_berthier
 		#01/05/1912
-		FRA_ww1_beyond_fear
+		FRA_ww1_trust_joffre
+		FRA_ww1_plan_xvii
 		FRA_ww1_attract_moderate_support
 		FRA_ww1_socialist_mentality
 		FRA_ww1_support_for_universities
@@ -151,7 +152,8 @@ French_neutrality_napoleon = {
 		FRA_ww1_dreyfus_exoneration
 		FRA_ww1_form_the_proudhon_circle
 		FRA_ww1_support_napoleon_V
-		FRA_ww1_beyond_fear
+		FRA_ww1_trust_joffre
+		FRA_ww1_plan_xvii
 		FRA_ww1_renember_1812
 		#1911
 		FRA_ww1_buy_army_loyalty
@@ -178,7 +180,7 @@ French_neutrality_napoleon = {
 		FRA_first_lille_award
 		FRA_second_lille_award
 		FRA_ww1_static_warfare_focus
-		FRA_ww1_world_breakout
+		FRA_ww1_long_excepted_war
 		FRA_ww1_anti_air_positions
 		FRA_ww1_fund_schneider
 		#01/05/1915
@@ -245,7 +247,8 @@ French_neutrality_napoleon = {
 		#01/05/1911
 		FRA_ww1_support_monarchists
 		FRA_ww1_restaure_monarchist_sentiment
-		FRA_ww1_beyond_fear
+		FRA_ww1_trust_joffre
+		FRA_ww1_plan_xvii
 		FRA_ww1_buy_army_loyalty
 		FRA_ww1_rapeal_the_law_of_exile
 		#01/05/1912
@@ -268,7 +271,7 @@ French_neutrality_napoleon = {
 		#01/05/1915
 		FRA_ww1_factories_mobilization
 		FRA_ww1_fund_peugeot
-		FRA_ww1_world_breakout
+		FRA_ww1_long_excepted_war
 		FRA_ww1_anti_air_positions
 		FRA_ww1_fund_schneider
 		#01/05/1916
@@ -343,7 +346,8 @@ National_syndicalism = {
 		#01/05/1911
 		FRA_ww1_industrial_innovation
 		FRA_ww1_revision_de_larmee_de_terre
-		FRA_ww1_beyond_fear
+		FRA_ww1_trust_joffre
+		FRA_ww1_plan_xvii
 		FRA_ww1_persecute_minorities
 		FRA_ww1_ban_socialism
 		#01/05/1912
@@ -363,10 +367,11 @@ National_syndicalism = {
 		FRA_ww1_factories_mobilization
 		FRA_ww1_french_revenchism
 		FRA_strasbourg_or_war
-		FRA_ww1_world_breakout
+		FRA_ww1_long_excepted_war
 		#01/05/1915
 		FRA_ww1_emergency_measures
 		FRA_ww1_mechanized_effort
+		FRA_ww1_CA1_early_production
 		FRA_ww1_the_french_miracle
 		FRA_ww1_form_the_armored_spearhead
 		#01/05/1916

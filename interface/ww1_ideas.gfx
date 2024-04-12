@@ -2736,6 +2736,10 @@ spriteTypes = {
 		name = "GFX_idea_INS_colonial_nation"
 		texturefile = "gfx/interface/ideas/KR/DEI_colonial_nation.png"
 	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Staff"
+		texturefile = "gfx/interface/ideas/KR/advisors_UK2.png"
+	}
 
 	spriteType = {
 		name = "GFX_idea_KUW_Jabir_bust"
@@ -2791,5 +2795,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_DON_Alekseev_Organization"
 		texturefile = "gfx/interface/ideas/DON/DON_idea_Alekseev_Organization.png"
+	}
+	spriteType = {
+		name = "GFX_idea_DON_volunteer_army"
+		texturefile = "gfx/interface/ideas/DON/DON_idea_volunteer_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRA_osvag"
+		texturefile = "gfx/interface/ideas/osvag.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRA_kuban_rada"
+		texturefile = "gfx/interface/ideas/kuban_rada.png"
+	}
+	spriteType = {
+		name = "GFX_idea_MON_bogd_khan"
+		textureFile = "gfx/interface/ideas/idea_MON_bogd_khan.png"
 	}
 }
