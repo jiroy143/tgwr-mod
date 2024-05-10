@@ -4946,10 +4946,10 @@ country_event = {
 			}
 		}
 		108 = {
-			transfer_state_to = FRA
+			transfer_state_to = MOR
 		}
 		461 = {
-			transfer_state_to = FRA
+			transfer_state_to = MOR
 		}
 	}
 }
@@ -4971,10 +4971,10 @@ country_event = {
 			transfer_state_to = SPR
 		}
 		108 = {
-			transfer_state_to = FRA
+			transfer_state_to = MOR
 		}
 		461 = {
-			transfer_state_to = FRA
+			transfer_state_to = MOR
 		}
 	}
 }
