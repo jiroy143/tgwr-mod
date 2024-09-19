@@ -13729,7 +13729,7 @@ focus_tree = {
 		available = {
 			OR = {
 				GER = { has_war_with = FRA }
-				has_global_flag = kis_war
+				has_global_flag = great_war
 			}
 			has_army_manpower = {
 				size > 750000
