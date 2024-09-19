@@ -99,7 +99,7 @@ ideas = {
 						has_government = democratic
 					}
 					OR = {
-						has_global_flag = kis_war
+						has_global_flag = great_war
 						surrender_progress > 0					
 					}			
 				}
@@ -176,7 +176,7 @@ ideas = {
 				if = {
 					limit = { original_tag = ENG }
 					OR = {
-						has_global_flag = kis_war
+						has_global_flag = great_war
 						threat > 0.5
 						surrender_progress > 0					
 					}
@@ -273,7 +273,7 @@ ideas = {
 				if = {
 					limit = { original_tag = ENG }
 					OR = {
-						has_global_flag = kis_war
+						has_global_flag = great_war
 						threat > 0.7
 						surrender_progress > 0					
 					}
@@ -362,7 +362,7 @@ ideas = {
 					factor = 0
 					original_tag = TUR
 					NOT = {
-						has_global_flag = kis_war
+						has_global_flag = great_war
 						AND = {
 							any_country = {
 								is_major = yes
@@ -401,7 +401,7 @@ ideas = {
 				if = {
 					limit = { original_tag = ENG }
 					OR = {
-						has_global_flag = kis_war
+						has_global_flag = great_war
 						threat > 0.9
 						surrender_progress > 0					
 					}
@@ -517,7 +517,7 @@ ideas = {
 				if = {
 					limit = { original_tag = ENG }
 					OR = {
-						has_global_flag = kis_war
+						has_global_flag = great_war
 						threat > 0.99
 						surrender_progress > 0					
 					}

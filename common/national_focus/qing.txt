@@ -13057,7 +13057,7 @@ focus_tree = {
 			NOT = { has_idea = QIN_idea_boxer_protocol }
 			OR = {
 			GER = { has_war_with = FRA }
-			has_global_flag = kis_war
+			has_global_flag = great_war
 			}
 			is_subject = no
 		}

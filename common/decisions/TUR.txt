@@ -145,7 +145,7 @@ GER_great_war = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = the_great_war_has_started
-				has_global_flag = kis_war
+				has_global_flag = great_war
 			}
 			any_enemy_country = {
 				is_major = yes
@@ -15614,7 +15614,7 @@ TUR_minority_decision = {
 					YEM = {
 						if = {
 							limit = {
-								NOT = { has_global_flag = kis_war }
+								NOT = { has_global_flag = great_war }
 							}
 							add_ideas = standing_alone	
 						}
@@ -16598,7 +16598,7 @@ peace_deals = {
 			}
 			if = {
 				limit = {
-					has_global_flag = kis_war
+					has_global_flag = great_war
 				}
 				OR = {
 					has_global_flag = great_war_ends
@@ -16835,7 +16835,7 @@ peace_deals = {
 	# 		NOT = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = the_great_war_has_started
-	# 				has_global_flag = kis_war
+	# 				has_global_flag = great_war
 	# 			}
 	# 		}
 	# 		NOT = {
@@ -16870,7 +16870,7 @@ peace_deals = {
 	# 		has_war_with = SER
 	# 		has_global_flag = kis_firstbalkan_war
 	# 		NOT = {
-	# 			has_global_flag = kis_war
+	# 			has_global_flag = great_war
 	# 			has_global_flag = kis_firstbalkanwar_victory
 	# 			has_global_flag = TUR_peace_SER
 	# 		}
@@ -16938,7 +16938,7 @@ peace_deals = {
 				is_faction_leader = yes
 			}
 			NOT = {
-				has_global_flag = kis_war
+				has_global_flag = great_war
 			}
 		}
 		available = {
@@ -17097,7 +17097,7 @@ operations = {
 							is_subject = no
 							has_war = no
 							NOT = {
-								has_global_flag = kis_war
+								has_global_flag = great_war
 								has_subject = ROOT
 								is_in_faction_with = ROOT
 							}
