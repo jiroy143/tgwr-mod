@@ -1484,7 +1484,7 @@ focus_tree = {
 				has_idea = idea_diplomatic_isolation
 			}
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -1536,7 +1536,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -1596,7 +1596,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -1656,7 +1656,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -1716,7 +1716,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -1776,7 +1776,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -2378,7 +2378,7 @@ focus_tree = {
 				has_idea = idea_diplomatic_isolation
 			}
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 				}
@@ -2404,7 +2404,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					JAP = { has_country_flag = great_war_loser }
@@ -2444,7 +2444,7 @@ focus_tree = {
 				is_subject_of = JAP
 			}
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					JAP = { has_country_flag = great_war_loser }
@@ -2483,7 +2483,7 @@ focus_tree = {
 				is_subject_of = JAP
 			}
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					JAP = { has_country_flag = great_war_loser }
@@ -2525,7 +2525,7 @@ focus_tree = {
 				is_subject_of = JAP
 			}
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					JAP = { has_country_flag = great_war_loser }
@@ -2569,7 +2569,7 @@ focus_tree = {
 				is_subject_of = JAP
 			}
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					JAP = { has_country_flag = great_war_loser }
@@ -2611,7 +2611,7 @@ focus_tree = {
 				is_subject_of = JAP
 			}
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					JAP = { has_country_flag = great_war_loser }
@@ -2679,7 +2679,7 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_global_flag = kis_war
+			has_global_flag = great_war
 			NOT = {
 				has_global_flag = great_war_ends
 			}
@@ -2724,7 +2724,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -2765,7 +2765,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -2810,7 +2810,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -2847,7 +2847,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					GER = { has_country_flag = great_war_loser }
@@ -2917,7 +2917,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = GER
 					has_war_with = FRA
@@ -2989,7 +2989,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = FRA
 					has_war_with = GER
@@ -3031,7 +3031,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = FRA
 					has_war_with = GER
@@ -3076,7 +3076,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = FRA
 					has_war_with = GER
@@ -3113,7 +3113,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_country_flag = great_war_loser
 					GER = { has_country_flag = great_war_loser }
@@ -3183,7 +3183,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			if = {
-				limit = { has_global_flag = kis_war }
+				limit = { has_global_flag = great_war }
 				NOT = {
 					has_war_with = FRA
 					has_war_with = GER
