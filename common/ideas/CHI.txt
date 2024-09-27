@@ -19,7 +19,6 @@ ideas = {
 				}
 				any_country = {
 					OR = {
-						has_completed_focus = QIN_japanese_manufacturer
 						has_completed_focus = CHI_shanghai_shipyards
 						has_completed_focus = ANC_focus_align_with_japan
 					}

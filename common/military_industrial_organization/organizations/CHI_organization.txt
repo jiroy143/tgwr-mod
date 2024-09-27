@@ -19,7 +19,6 @@ CHI_jiangnan_shipyard_group_organization = {
 		any_country = {
 			is_china_or_warlord = yes
 			OR = {
-				has_completed_focus = QIN_shanghai_shipyards
 				has_completed_focus = CHI_shanghai_shipyards
 				has_completed_focus = ANC_focus_align_with_japan
 			}
