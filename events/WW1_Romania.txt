@@ -786,6 +786,9 @@ country_event = {
 	option = {
 		name = ww1_romania.28.a
 		add_war_support = 0.03
+		ai_chance = {
+			factor = 5
+		}
 	}
 	option = {
 		name = ww1_romania.28.b
@@ -796,6 +799,9 @@ country_event = {
 			}
 		}
 		complete_national_focus = ROM_our_call_to_arms
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -1507,11 +1513,7 @@ country_event = {
 	desc = ww1_romania.57.d
 	picture = GFX_report_event_europe_funeral
 	fire_only_once = yes
-	trigger = {
-		tag = ROM
-		has_war_with = GER
-		surrender_progress > 0.9
-	}
+	is_triggered_only = yes
 	option = {
 		name = ww1_romania.57.a
 		set_global_flag = ROM_carp_puppet_government
@@ -2193,15 +2195,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ww1_romania.79.a
-		add_political_power = -20
-		set_global_flag = ROM_national_opposition_minigame_start
-		add_dynamic_modifier = {
-			modifier = ROM_national_opposition
-		}
-		set_variable = {
-			ROM_national_opposition_political_power = -0.5
-			ROM_national_opposition_stability = -0.25
-		}
+		add_political_power = 50
+		clr_global_flag = ROM_national_opposition_minigame_start
+		add_stability = 0.1
 	}
 }
 
@@ -2215,8 +2211,6 @@ country_event = {
 	option = {
 		name = ww1_romania.80.a
 		add_political_power = -20
-		set_global_flag = ROM_national_opposition_minigame_start
-		add_ideas = ROM_national_opposition_idea
 	}
 }
 
@@ -2364,7 +2358,9 @@ country_event = {
 				every_owned_state = {
 					limit = {
 						is_core_of = ROM
-						NOT = { state = 1020 }
+						NOT = {
+							state = 1020
+						}
 					}
 					transfer_state_to = ROM
 				}
@@ -3162,18 +3158,27 @@ country_event = {
 	desc = ww1_romania.109.d
 	picture = GFX_report_event_europe_funeral
 	fire_only_once = yes
-	trigger = {
-		tag = ROM
-		has_war_with = GER
-		surrender_progress > 0.4
-	}
+	is_triggered_only = yes
+	
 	option = {
 		name = ww1_romania.109.a
-		promote_character = ROM_alexandru_marghiloman
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+			name = ROM_conservative_party
+			long_name = ROM_conservative_party_long
+		}
+		promote_character = {
+			character = ROM_alexandru_averescu
+			ideology = authoritarian_democracy
+		}
 		clr_global_flag = ROM_liberal_government
 		clr_global_flag = ROM_pcd_government
 		set_global_flag = ROM_conservative_government
+		set_global_flag = ROM_treaty_doable
 		custom_effect_tooltip = ROM_help1
+		unlock_decision_tooltip = ROM_treaty_of_bucharest
+		activate_mission_tooltip = ROM_carp_collaborationist_governmenmt
 	}
 }
 
@@ -3491,6 +3496,7 @@ country_event = {
 			character = ROM_constantin_stere
 			ideology = social_democracy
 		}
+		complete_national_focus = ROM_hostile_takeover_of_government
 	}
 }
 
